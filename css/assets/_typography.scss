@@ -1,0 +1,52 @@
+@use 'colors' as *;
+@use 'mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+//Headings
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4.395rem;
+    text-align: center;
+}
+
+h2, h3, h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+h4{
+    font-size: 2.25rem;
+}
+
+//Body text
+
+p, ul, li, a, input, button{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

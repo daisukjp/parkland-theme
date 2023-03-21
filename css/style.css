@@ -1,0 +1,928 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+.header h1 {
+  color: red;
+}
+
+html {
+  line-height: 1.5;
+}
+
+/* Forms
+--------------------------------------------- */
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1;
+  padding: 0.7rem;
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+  border-color: #ccc #bbb #aaa;
+}
+
+button:active,
+button:focus,
+input[type=button]:active,
+input[type=button]:focus,
+input[type=reset]:active,
+input[type=reset]:focus,
+input[type=submit]:active,
+input[type=submit]:focus {
+  border-color: #aaa #bbb #bbb;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=range]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
+textarea:focus {
+  color: #111;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 4.395rem;
+  text-align: center;
+}
+
+h2, h3, h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.25rem;
+}
+
+p, ul, li, a, input, button {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.site-header {
+  background: #74865E;
+  border-bottom: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+header svg {
+  height: 6rem;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 128rem;
+}
+
+@media (max-width: 50rem) {
+  .main-navigation {
+    display: block;
+  }
+  .main-navigation a {
+    border-bottom: 1px solid black;
+    padding-left: 1rem;
+    padding-top: 2.5rem;
+    height: 8rem;
+    background: #74865E;
+  }
+  .main-navigation.toggled {
+    position: relative;
+  }
+  .main-navigation.toggled .search {
+    position: absolute;
+    display: block;
+    top: 17.6rem;
+  }
+  .main-navigation.toggled ul#primary-menu {
+    padding-bottom: 8rem;
+    border-bottom: 1px solid black;
+  }
+  .search {
+    display: none;
+  }
+  .weather-and-button-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation-menu {
+    position: relative;
+    background: #74865E;
+  }
+  .menu-menu-1-container {
+    position: absolute;
+    background: #74865E;
+    left: -1rem;
+    top: 1rem;
+    width: 100vw;
+  }
+  .weather-widget {
+    margin: 0 auto;
+  }
+}
+.search {
+  position: relative;
+}
+
+.search button {
+  position: absolute;
+}
+
+.search button svg {
+  position: absolute;
+  top: 0.4rem;
+  right: 2rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.weather-widget {
+  max-width: 320px;
+  min-width: 320px;
+}
+
+.current-weather {
+  display: flex;
+}
+
+.menu-toggle svg {
+  height: 3.5rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+footer svg {
+  height: 12rem;
+  margin-bottom: 1rem;
+}
+
+.site-footer {
+  background-color: #74865E;
+  border-top: 1px solid black;
+}
+
+.fa {
+  color: white;
+}
+
+.contact h4 a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.sitemap h3 {
+  text-decoration: underline;
+}
+
+footer p {
+  text-align: center;
+}
+
+.sitemap ul {
+  text-align: center;
+  padding: 0rem;
+}
+
+.sitemap ul li {
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 2rem 0;
+}
+
+.footer-flex-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 75rem) {
+  .footer-flex-container {
+    display: block;
+  }
+  .footer-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .sitemap {
+    order: 1;
+  }
+  .sitemap ul {
+    padding: 0;
+  }
+  .sitemap ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .sitemap li {
+    width: 45%;
+  }
+}
+.social-media-links ul {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding-inline-start: 0px;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.social-media-links li {
+  padding: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+@media (min-width: 75rem) {
+  .site-navigation {
+    align-items: end;
+  }
+  .sitemap {
+    align-items: flex-start;
+  }
+}
+/*!
+Theme Name: parkland-theme
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Parkland Tai Chi Website
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: parkland-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+    - Elements
+    - Pages
+        - Home page
+        - About us page
+        - Instructors page
+        - Classes/Bookings page
+        - Blog posts page
+        - Blog page
+        - Photo gallery page
+        - Search results page
+        - Blog archives
+        - 404 page
+    - Components
+    - Navigation
+    - Posts and pages
+    - Comments
+    - Widgets
+    - Media
+    - Captions
+    - Galleries
+    - Plugins
+    - Utilities
+    - Accessibility
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 2.5px;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# PAGES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Home page
+--------------------------------------------------------------*/
+.hero-banner {
+  background: url("../images/ptc-home-page-banner.webp") center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  height: 60vh;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# About-us page
+--------------------------------------------------------------*/
+.about-us-container h2 {
+  text-align: left;
+}
+
+.about-us-container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.about-us-section-intro {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+}
+.about-us-section-intro p {
+  max-width: 65ch;
+}
+
+.contact-info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.contact-info-section .about-us-contact-info {
+  flex-grow: 1;
+}
+
+.faq-item h4 {
+  text-align: left;
+}
+
+/*--------------------------------------------------------------
+# Instructors page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Booking/Classes page
+--------------------------------------------------------------*/
+.class-information {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.classes-header {
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.archive h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.class-types-flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 0 0 2rem 0;
+}
+
+.all-levels {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  padding: 4rem 0;
+  background-color: #ECE6DE;
+}
+
+.beginner {
+  background-color: #bfe7f3;
+  padding: 2rem;
+}
+
+.intermediate {
+  background-color: #e8edd1;
+  padding: 2rem;
+}
+
+.advanced {
+  background-color: #f4cfcc;
+  padding: 2rem;
+}
+
+/*--------------------------------------------------------------
+# Class details page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Blog posts page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Single blog page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Photo gallery page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Search results page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Archive page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# 404 page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# END OF PAGES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.main-navigation ul ul {
+  float: left;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: -999em;
+  z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  display: block;
+  left: auto;
+}
+
+.main-navigation ul ul a {
+  width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+
+.main-navigation li {
+  position: relative;
+}
+
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 50rem) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+}
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+  display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  text-align: end;
+  flex: 1 0 50%;
+}
+
+/*--------------------------------------------------------------
+# Posts and Pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget select {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+  display: inline-block;
+}
+
+.about-us-banner-image img {
+  max-width: 128rem;
+  margin: 0 auto;
+  height: auto;
+}
+
+/*--------------------------------------------------------------
+# Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*=wp-image-] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+.contact-icons svg {
+  height: 3rem;
+}
+
+/*--------------------------------------------------------------
+# Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em;
+  display: grid;
+  grid-gap: 1.5em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.gallery-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+.weather-app {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/*# sourceMappingURL=style.css.map */

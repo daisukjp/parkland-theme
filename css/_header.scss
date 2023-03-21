@@ -1,0 +1,121 @@
+@use 'assets/colors' as *;
+@use 'assets/mixins';
+
+.site-header{
+background: $matcha-green;
+border-bottom: 1px solid black;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+padding: 1rem;
+margin-bottom: 2rem;
+}
+
+header svg{
+    height: 6rem;
+}
+
+.main-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 128rem;
+}
+
+
+@media (max-width: 50rem)  {
+    .main-navigation{
+        display: block;
+
+        a{
+            border-bottom: 1px solid black;
+            padding-left: 1rem;
+            padding-top: 2.5rem;
+            height: 8rem;
+            background: $matcha-green;;
+        }
+    }
+
+    .main-navigation.toggled{
+        position: relative;
+
+        .search{
+            position: absolute;
+            display: block;
+            top: 17.6rem;
+        }
+
+        ul#primary-menu{
+            padding-bottom: 8rem;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    .search {
+        display: none;
+    }
+
+
+    .weather-and-button-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation-menu{
+        position: relative;
+        background: $matcha-green;
+
+    }
+
+    .menu-menu-1-container{
+        position: absolute;
+        background: $matcha-green;
+        left: -1rem;
+        top: 1rem;
+        width: 100vw;
+    }
+
+    .weather-widget{
+        margin: 0 auto;
+    }
+
+
+}
+
+.search{
+    position: relative;
+}
+
+.search button {
+    position: absolute;
+}
+
+.search button svg {
+    position: absolute;
+    top: 0.4rem;
+    right: 2rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.weather-widget{
+    max-width: 320px;
+    min-width: 320px;
+}
+
+
+.current-weather{
+    display: flex;
+}
+
+.menu-toggle svg {
+    height: 3.5rem;
+}
+
+
