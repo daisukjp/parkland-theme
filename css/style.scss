@@ -114,6 +114,19 @@ table {
     width: 100%;
 }
 
+.overlay-box {
+    position: absolute;
+    background-color: $gray-99;
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem;
+    top: 18rem;
+}
+
+.overlay-box p {
+    text-align: center;
+}
+
 /*--------------------------------------------------------------
 # About-us page
 --------------------------------------------------------------*/
