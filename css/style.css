@@ -524,6 +524,12 @@ table {
 /*--------------------------------------------------------------
 # Home page
 --------------------------------------------------------------*/
+/* Banner Section (Mobile)*/
+.wrap-home-page-container {
+  max-width: 128rem;
+  margin: auto;
+}
+
 .hero-banner {
   background: url("../images/ptc-home-page-banner.webp") center no-repeat;
   background-size: cover;
@@ -543,6 +549,8 @@ table {
 
 .overlay-box h2 {
   font-size: 28.1px;
+  font-weight: 600;
+  margin: 18px 0;
 }
 
 .overlay-box p {
@@ -555,6 +563,7 @@ table {
   justify-content: space-between;
   align-items: center;
   flex-flow: column;
+  margin: 18px 0.5rem;
 }
 
 .banner-btn {
@@ -562,21 +571,112 @@ table {
   font-size: 20px;
   font-weight: bold;
   color: #FCFCFC;
-  width: 194px;
-  margin: 18px 0;
-  padding: 2rem;
+  width: 174px;
+  margin-top: 18px;
+  padding: 1.8rem 0.6rem;
   border-radius: 12px;
   text-transform: uppercase;
 }
 
 .btn-book-class {
   background-color: #74865E;
+  border: 4px solid #74865E;
+}
+.btn-book-class:hover {
+  background-color: #FCFCFC;
+  color: #74865E;
+  border: 4px solid #74865E;
+}
+.btn-book-class:active, .btn-book-class:focus {
+  background-color: #AFC595;
+  color: #FCFCFC;
+  border: 4px solid #AFC595;
 }
 
 .btn-read-more {
   background-color: #B4B48F;
+  border: 4px solid #B4B48F;
+}
+.btn-read-more:hover {
+  background-color: #FCFCFC;
+  color: #B4B48F;
+  border: 4px solid #B4B48F;
+}
+.btn-read-more:active, .btn-read-more:focus {
+  background-color: #D5D5C0;
+  color: #FCFCFC;
+  border: 4px solid #D5D5C0;
 }
 
+/* Mission Statement Section (Mobile)*/
+.wrap-mission-statement {
+  margin: 72px 2rem;
+}
+
+.mission-statement-section h1 {
+  font-size: 35.16px;
+  color: #74865E;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.mission-statement p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28.13px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 27px;
+}
+
+/* Desktop Menu */
+@media (min-width: 600px) {
+  /* Banner - Section (small)*/
+  .banner-btn-flex {
+    flex-flow: nowrap;
+    justify-content: space-between;
+  }
+  .overlay-box {
+    max-width: 580px;
+    top: 22rem;
+    padding: 3rem 2rem;
+    margin: 50px;
+  }
+  .overlay-box p {
+    max-width: 481.41px;
+    margin: auto;
+  }
+  .banner-btn {
+    font-size: 24px;
+    width: 254px;
+    padding: 1.2rem 0.6rem;
+    gap: 23px;
+  }
+  /* Mission Statement Section (small) */
+  .mission-statement-section h1 {
+    font-size: 64px;
+    text-align: left;
+  }
+  .wrap-mission-statement {
+    margin: 72px 50px;
+    max-width: 128rem;
+  }
+  .mission-statement p {
+    line-height: 42.2px;
+  }
+}
+@media (min-width: 1750px) {
+  /* Banner Section (exwide)*/
+  .overlay-box {
+    max-width: 580px;
+    top: 22rem;
+    padding: 3rem 2rem;
+    margin: 0;
+  }
+  .wrap-mission-statement {
+    margin: 72px auto;
+  }
+}
 /*--------------------------------------------------------------
 # About-us page
 --------------------------------------------------------------*/

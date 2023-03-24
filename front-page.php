@@ -10,8 +10,8 @@ get_header();
 ?>
 
 <div class="home-page-container">
-
 <div class="hero-banner">
+    <div div class="wrap-home-page-container">
     <div class="overlay-box">
         <h2>Welcome to Parkland Tai Chi, where Health is for Life.</h2>
         <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
@@ -20,14 +20,17 @@ get_header();
             <button class="btn-read-more banner-btn">Read More</button>
         </div>
     </div>
+    </div>
 </div>
 
 <div class="mission-statement-section">
+    <div class="wrap-mission-statement">
     <div class="mission-statement">
-        <h1>Health and Longevity</h1>
+        <h1>Health & Longevity</h1>
         <p>
         At Parkland Tai Chi our aim is to improve circulation, balance and flexibility. We look to provide our clients with a method of deep relaxation and focused calmness to provide a sense of peace in a otherwise chaotic world.
         </p>
+    </div>
     </div>
 
     <div class="taichi-symbols">
@@ -35,6 +38,7 @@ get_header();
         <p>We have an all-levels Chi Kung class from multiple disciplines and techniques</p>
         <p>We give Advance individual teaching at our Saturday open practice session</p>
     </div>
+    
 </div>
 
 <div class="more-about-us">
@@ -72,8 +76,6 @@ get_header();
     </ul>
     </div>
 </div>
-
-
 </div>
 
 <?php get_footer(); ?>
