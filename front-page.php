@@ -15,8 +15,10 @@ get_header();
     <div class="overlay-box">
         <h2>Welcome to Parkland Tai Chi, where Health is for Life.</h2>
         <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
-        <button>Book A Class</button>
-        <button>Read More</button>
+        <div class="banner-btn-flex">
+            <button class="btn-book-class banner-btn">Book A Class</button>
+            <button class="btn-read-more banner-btn">Read More</button>
+        </div>
     </div>
 </div>
 

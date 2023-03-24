@@ -541,8 +541,40 @@ table {
   top: 18rem;
 }
 
+.overlay-box h2 {
+  font-size: 28.1px;
+}
+
 .overlay-box p {
   text-align: center;
+  font-size: 18px;
+}
+
+.banner-btn-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+
+.banner-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FCFCFC;
+  width: 194px;
+  margin: 18px 0;
+  padding: 2rem;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.btn-book-class {
+  background-color: #74865E;
+}
+
+.btn-read-more {
+  background-color: #B4B48F;
 }
 
 /*--------------------------------------------------------------

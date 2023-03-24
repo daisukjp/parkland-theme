@@ -123,10 +123,39 @@ table {
     top: 18rem;
 }
 
-.overlay-box p {
-    text-align: center;
+.overlay-box h2 {
+    font-size: 28.1px;
 }
 
+.overlay-box p {
+    text-align: center;
+    font-size: 18px
+}
+
+.banner-btn-flex {
+    @include mixins.basic-flex;
+    flex-flow: column;
+}
+
+.banner-btn {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: $gray-99;
+    width: 194px;
+    margin: 18px 0;
+    padding: 2rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+.btn-book-class {
+    background-color: $matcha-green;
+}
+
+.btn-read-more {
+    background-color: $dark-sage-green;
+}
 /*--------------------------------------------------------------
 # About-us page
 --------------------------------------------------------------*/
