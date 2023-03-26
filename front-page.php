@@ -33,10 +33,21 @@ get_header();
     </div>
     </div>
 
-    <div class="taichi-symbols">
-        <p>We offer Beginner, Intermediate, and Advance Tai Chi classes</p>
-        <p>We have an all-levels Chi Kung class from multiple disciplines and techniques</p>
-        <p>We give Advance individual teaching at our Saturday open practice session</p>
+    <div class="taichi-symbols-section">
+        <div class="wrap-taichi-symbol">
+        <div class="taichi-vector">
+            <img src="/wp-content/themes/parkland-theme/images/Vector-1.png" alt="tai chi symbol" style="width:200px;height:190px">
+            <p>We offer Beginner, Intermediate, and Advance Tai Chi classes</p>
+        </div>
+        <div class="taichi-vector">
+            <img src="/wp-content/themes/parkland-theme/images/Vector-2.png" alt="tai chi symbol" style="width:200px;height:190px">
+            <p>We have an all-levels Chi Kung class from multiple disciplines and techniques</p>
+        </div>
+        <div class="taichi-vector">
+            <img src="/wp-content/themes/parkland-theme/images/Vector.png" alt="tai chi symbol" style="width:170px;height:200px">
+            <p>We give Advance individual teaching at our Saturday open practice session</p>
+        </div>
+        </div>
     </div>
     
 </div>

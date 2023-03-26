@@ -629,6 +629,31 @@ table {
   line-height: 27px;
 }
 
+/* Tai chi Symbol section */
+.taichi-symbols-section {
+  background-color: #D9D3DD;
+}
+
+.wrap-taichi-symbol {
+  padding: 72px 20px;
+  display: flex;
+  flex-flow: column;
+}
+
+.taichi-vector {
+  align-items: center;
+  text-align: center;
+}
+
+.taichi-vector img {
+  margin: auto;
+}
+
+.taichi-vector p {
+  max-width: 360px;
+  margin: 72px auto;
+}
+
 /* Desktop Menu */
 @media (min-width: 600px) {
   /* Banner - Section (small)*/
@@ -663,6 +688,12 @@ table {
   }
   .mission-statement p {
     line-height: 42.2px;
+  }
+}
+@media (min-width: 800px) {
+  .wrap-taichi-symbol {
+    flex-flow: nowrap;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1750px) {
