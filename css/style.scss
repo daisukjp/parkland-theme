@@ -222,13 +222,19 @@ table {
     background-color: $pantone;
 }
 
-.wrap-taichi-symbol {
-    padding: 72px 20px;
+.wrap-taichi-symbol,
+.more-about-us {
+    padding: 72px 20px 0 20px;
+}
+
+.wrap-taichi-symbol,
+.wrap-more-about-us {
     display: flex;
     flex-flow: column;
 }
 
-.taichi-vector {
+.taichi-vector,
+.more-about-images {
     align-items: center;
     text-align: center;
 }
@@ -238,8 +244,39 @@ table {
 }
 
 .taichi-vector p {
+    font-weight: 200;
     max-width: 360px;
     margin: 72px auto;
+}
+
+/* More About Us section */
+.more-about-us h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22.5px;
+    font-weight: 600;
+    color: $matcha-green;
+    text-transform: uppercase;
+    margin-bottom: 72px;
+}
+
+.more-about-images{
+    margin-bottom: 72px;
+}
+.more-about-images img {
+    margin: auto;
+}
+
+.more-about-images p {
+    max-width: 360px;
+    margin: 36px auto 0 auto;
+}
+
+.more-about-images a {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22.5px;
+    font-weight: 600;
+    margin-top: 36px;
 }
 
 /* Desktop Menu */
@@ -282,14 +319,42 @@ table {
     .mission-statement p {
         line-height: 42.2px;
     }
+
+    /* Tai chi Symbol section (small)*/
+    /* More About Us section (small)*/
+    .wrap-taichi-symbol,
+    .wrap-more-about-us {
+        max-width: 128rem;
+        margin: auto;
+    }
 }
 
 @include mixins.break(med) {
-    .wrap-taichi-symbol {
+    /* Tai chi Symbol section (Med)*/
+    /* More About Us section (Med)*/
+    .wrap-taichi-symbol,
+    .wrap-more-about-us {
         flex-flow: nowrap;
         justify-content: space-between;
     }
+    .wrap-more-about-us {
+        gap: 1rem;
+    }
 } 
+
+@include mixins.break(wide) {
+    .overlay-box h2 {
+        font-size: 35.2px;
+    }
+    .overlay-box p {
+        font-size: 22.5px;
+    }
+
+    .more-about-images a {
+        font-size: 28.13px;
+    }
+    
+}
 
 @include mixins.break(exwide) {
     /* Banner Section (exwide)*/ 

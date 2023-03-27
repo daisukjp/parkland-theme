@@ -36,16 +36,20 @@ get_header();
     <div class="taichi-symbols-section">
         <div class="wrap-taichi-symbol">
         <div class="taichi-vector">
-            <img src="/wp-content/themes/parkland-theme/images/Vector-1.png" alt="tai chi symbol" style="width:200px;height:190px">
+            <img src="/wp-content/themes/parkland-theme/images/Vector.png" alt="tai chi symbol" style="width:150px;height:170px">
             <p>We offer Beginner, Intermediate, and Advance Tai Chi classes</p>
         </div>
         <div class="taichi-vector">
-            <img src="/wp-content/themes/parkland-theme/images/Vector-2.png" alt="tai chi symbol" style="width:200px;height:190px">
-            <p>We have an all-levels Chi Kung class from multiple disciplines and techniques</p>
+            <img src="/wp-content/themes/parkland-theme/images/Vector-1.png" alt="tai chi symbol" style="width:180px;height:170px">
+            <p>We have an all-levels Chi Kung class from multiple disciplines and techniques
+
+            </p>
         </div>
         <div class="taichi-vector">
-            <img src="/wp-content/themes/parkland-theme/images/Vector.png" alt="tai chi symbol" style="width:170px;height:200px">
-            <p>We give Advance individual teaching at our Saturday open practice session</p>
+            <img src="/wp-content/themes/parkland-theme/images/Vector-2.png" alt="tai chi symbol" style="width:210px;height:170px">
+            <p>We give Advance individual teaching at our Saturday open practice session
+
+            </p>
         </div>
         </div>
     </div>
@@ -53,17 +57,29 @@ get_header();
 </div>
 
 <div class="more-about-us">
-    <div class="read-our-blog">
-        <p>Text here...</p>
-        <h3>Read Our Blog</h3>
+    <h2>More About Us</h2>
+    <div class="wrap-more-about-us">
+    <div class="read-our-blog more-about-images">
+        <img src="/wp-content/themes/parkland-theme/images/more-about-us3.jpg" alt="tai chi symbol" style="width:380px">
+        <p>
+            Viverra vel massa et, finibus aliquam tortor. classes,  finibus aliquam
+        </p>
+        <a href="#">Read Our Blog</a>
     </div>
-    <div class="view-our-gallery">
-        <p>Text here...</p>
-        <h3>View Our Gallery</h3>
+    <div class="view-our-gallery more-about-images">
+        <img src="/wp-content/themes/parkland-theme/images/more-about-us1.jpg" alt="tai chi symbol" style="width:380px">
+        <p>
+            Viverra vel massa et, finibus aliquam tortor. classes,  finibus aliquam
+        </p>
+        <a href="#">View Our Gallery</a>
     </div>
-    <div class="read-our-faq">
-        <p>Text here...</p>
-        <h3>Read Our FAQ</h3>
+    <div class="read-our-faq more-about-images">
+        <img src="/wp-content/themes/parkland-theme/images/more-about-us2.jpg" alt="tai chi symbol" style="width:380px">
+        <p>
+            Viverra vel massa et, finibus aliquam tortor. classes,  finibus aliquam
+        </p>
+        <a href="#">Read Our FAQ</a>
+    </div>
     </div>
 </div>
 
