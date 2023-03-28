@@ -84,23 +84,26 @@ get_header();
 </div>
 
 <div class="benefits-of-taichi">
-    <div class="benefits-image">
+    <div class="wrap-benefits-of-taichi">
+        <div class="benefits-image">
+            <img src="/wp-content/themes/parkland-theme/images/benefits-of-taichi.png" alt="tai chi symbol" style="width:360px">
+        </div>
+        <h2>Benefits of Tai Chi</h2>
 
-    </div>
-    <div class="benefits-text">
-    <h1>Benefits of Tai Chi</h1>
-    <ul>
-        <li>Relieve stress by deep tension release</li>
-        <li>Facilitate relaxation</li>
-        <li>Increase circulation, balance and flexibility</li>
-        <li>Align the skeleton and soft tissue</li>
-        <li>Decrease or eliminate chronic pain</li>
-        <li>Increase the ability to focus and make decisions</li>
-        <li>Revitalize the body and clear the mind</li>
-        <li>Reduce or eliminate common back problems</li>
-        <li>Relieve osteo-arthritis</li>
-        <li>Sustain a balanced perspective</li>
-    </ul>
+        <div class="benefits-text">
+            <ul>
+                <li>Relieve stress by deep tension release</li>
+                <li>Facilitate relaxation</li>
+                <li>Increase circulation, balance and flexibility</li>
+                <li>Align the skeleton and soft tissue</li>
+                <li>Decrease or eliminate chronic pain</li>
+                <li>Increase the ability to focus and make decisions</li>
+                <li>Revitalize the body and clear the mind</li>
+                <li>Reduce or eliminate common back problems</li>
+                <li>Relieve osteo-arthritis</li>
+                <li>Sustain a balanced perspective</li>
+            </ul>
+        </div>
     </div>
 </div>
 </div>

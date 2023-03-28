@@ -250,7 +250,8 @@ table {
 }
 
 /* More About Us section */
-.more-about-us h2 {
+.more-about-us h2,
+.benefits-of-taichi h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 22.5px;
     font-weight: 600;
@@ -277,6 +278,40 @@ table {
     font-size: 22.5px;
     font-weight: 600;
     margin-top: 36px;
+}
+
+/* Benefits of Tai Chi section */
+.benefits-of-taichi {
+    padding: 0px 20px 72px 20px;
+    ul {
+    padding-left: 0;
+    list-style: disc;
+
+        li {
+            &::before {
+                content: "・ ";
+            }
+        }
+    }  
+}
+
+.wrap-benefits-of-taichi {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    align-items: center;
+
+    .benefits-image {
+        order: 2;
+    }
+
+    h2 {
+        order: 1;
+    }
+
+    .benefits-text {
+        order: 3;
+    }
 }
 
 /* Desktop Menu */
@@ -339,6 +374,26 @@ table {
     }
     .wrap-more-about-us {
         gap: 1rem;
+    }
+
+    .wrap-benefits-of-taichi {
+        flex-flow: nowrap;
+
+        .benefits-image {
+            order: 1;
+            width: 50%;
+        }
+
+        h2 {
+            order: 2;
+            width: 50%;
+        }
+
+        .benefits-text {
+            width: 50%;
+            order: 3;
+        }
+        
     }
 } 
 
