@@ -85,10 +85,11 @@ get_header();
 
 <div class="benefits-of-taichi">
     <div class="wrap-benefits-of-taichi">
-        <div class="benefits-image">
-            <img src="/wp-content/themes/parkland-theme/images/benefits-of-taichi.png" alt="tai chi symbol" style="width:360px">
-        </div>
         <h2>Benefits of Tai Chi</h2>
+
+        <div class="benefits-image">
+            <img src="/wp-content/themes/parkland-theme/images/benefits-of-taichi.png" alt="tai chi symbol">
+        </div>
 
         <div class="benefits-text">
             <ul>
