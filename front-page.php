@@ -16,8 +16,8 @@ get_header();
         <h2>Welcome to Parkland Tai Chi, where Health is for Life.</h2>
         <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
         <div class="banner-btn-flex">
-            <button class="btn-book-class banner-btn">Book A Class</button>
-            <button class="btn-read-more banner-btn">Read More</button>
+            <a class="btn-book-class banner-btn">Book A Class</a>
+            <a class="btn-read-more banner-btn">Read More</a>
         </div>
     </div>
     </div>

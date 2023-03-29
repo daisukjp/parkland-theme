@@ -570,6 +570,7 @@ table {
   margin-top: 18px;
   padding: 1.8rem 0.6rem;
   border-radius: 12px;
+  text-align: center;
   text-transform: uppercase;
 }
 .hero-banner .wrap-home-page-container .overlay-box .banner-btn-flex .btn-book-class {
