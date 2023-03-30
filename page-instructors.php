@@ -29,7 +29,9 @@
     </div>
 
     <div class="instructors-section">
-        <h2>Meet Our Instructors</h2>
+        <h2>Meet Our Instructors <img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
+
+
         <div class="instructor-container-1">
             <div class="instructor-image">
                 <img src="/wp-content/themes/parkland-theme/images/ptc-john.webp" alt="picture of John" width="360" height="240">

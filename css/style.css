@@ -100,7 +100,7 @@ html {
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  font-size: 4.395rem;
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
   text-align: center;
 }
 
@@ -111,7 +111,7 @@ h2, h3, h4 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
 }
 
 h3 {
@@ -119,7 +119,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2.25rem;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
 }
 
 p, ul, li, a, input, button {
@@ -583,7 +583,7 @@ table {
 .instructors-rectangle {
   position: relative;
   text-align: center;
-  width: 260px;
+  width: clamp(5rem, 30vw, 27rem);
   height: 0px;
   bottom: 30px;
   border: 10px solid #74865E;
@@ -613,11 +613,30 @@ table {
 }
 
 .instructors-section h2 {
+  display: inline-block;
   color: #74865E;
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 72px;
   margin-bottom: 72px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .instructors-section h2 {
+    text-align: center;
+  }
+}
+.instructors-section h2 img {
+  position: absolute;
+  top: 0.5rem;
+  left: -1rem;
+  z-index: -1;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .instructors-section h2 img {
+    top: 0.5rem;
+  }
 }
 
 .instructor-image,

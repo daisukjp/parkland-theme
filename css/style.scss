@@ -167,7 +167,7 @@ table {
 .instructors-rectangle {
     position: relative;
     text-align: center;
-    width: 260px;
+    width: clamp(5rem, 30vw, 27rem);
     height: 0px;
     bottom: 30px;
     border: 10px solid $matcha-green;
@@ -186,6 +186,7 @@ table {
     z-index: 1;
 }
 
+
 .instructor-container-1,
 .instructor-container-2,
 .instructor-container-3,
@@ -198,11 +199,26 @@ table {
 }
 
 .instructors-section h2 {
+    display: inline-block;
     color: $matcha-green;
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 72px;
     margin-bottom: 72px;
+    position: relative;
+    @media (max-width: 800px) {
+        text-align: center;
+    }
+img {
+    position: absolute;
+    top: 0.5rem;
+    left: -1rem;
+    z-index: -1;
+    width: 100%;
+    @media (max-width:800px) {
+        top: .5rem;
+    }
+}
 }
 
 
