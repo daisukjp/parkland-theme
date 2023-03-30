@@ -26,9 +26,13 @@ get_header();
 <div class="mission-statement-section">
     <div class="wrap-mission-statement">
     <div class="mission-statement">
-        <h1>Health & Longevity</h1>
+        <div class="mission-statement-title">
+            <h1>Health & Longevity</h1>
+            <div class="vector-1">
+            </div>
+        </div>
         <p>
-        At Parkland Tai Chi our aim is to improve circulation, balance and flexibility. We look to provide our clients with a method of deep relaxation and focused calmness to provide a sense of peace in a otherwise chaotic world.
+        At Parkland Tai Chi our aim is to improve circulation,  balance and flexibility. We look to provide our clients with a method of deep relaxation and focused calmness to provide a sense of peace in a otherwise chaotic world.
         </p>
     </div>
     </div>
@@ -36,7 +40,7 @@ get_header();
     <div class="taichi-symbols-section">
         <div class="wrap-taichi-symbol">
         <div class="taichi-vector">
-            <img src="/wp-content/themes/parkland-theme/images/Vector.png" alt="tai chi symbol" style="width:150px;height:170px">
+            <img src="/wp-content/themes/parkland-theme/images/Vector-icon-3.png" alt="tai chi symbol" style="width:150px;height:170px">
             <p>We offer Beginner, Intermediate, and Advance Tai Chi classes</p>
         </div>
         <div class="taichi-vector">
@@ -60,23 +64,22 @@ get_header();
     <h2>More About Us</h2>
     <div class="wrap-more-about-us">
     <div class="read-our-blog more-about-images">
-        <img src="/wp-content/themes/parkland-theme/images/more-about-us3.jpg" alt="tai chi symbol" style="width:380px">
+        <img src="/wp-content/themes/parkland-theme/images/more-about-us3.webp" alt="tai chi symbol" style="width:380px">
         <p>
-            Viverra vel massa et, finibus aliquam tortor. classes,  finibus aliquam
-        </p>
+            Looking to gain a deeper understanding about Tai Chi? 
         <a href="#">Read Our Blog</a>
     </div>
     <div class="view-our-gallery more-about-images">
-        <img src="/wp-content/themes/parkland-theme/images/more-about-us1.jpg" alt="tai chi symbol" style="width:380px">
+        <img src="/wp-content/themes/parkland-theme/images/more-about-us1.webp" alt="tai chi symbol" style="width:380px">
         <p>
-            Viverra vel massa et, finibus aliquam tortor. classes,  finibus aliquam
+            Visit our photo gallery to get a look into what Parkland Tai Chi is all about.Viverra vel massa et, finibus aliquam tortor. classes,  finibus aliquam
         </p>
         <a href="#">View Our Gallery</a>
     </div>
     <div class="read-our-faq more-about-images">
-        <img src="/wp-content/themes/parkland-theme/images/more-about-us2.jpg" alt="tai chi symbol" style="width:380px">
+        <img src="/wp-content/themes/parkland-theme/images/more-about-us2.webp" alt="tai chi symbol" style="width:380px">
         <p>
-            Viverra vel massa et, finibus aliquam tortor. classes,  finibus aliquam
+            Have a question? Be sure to check out our FAQ to learn more.
         </p>
         <a href="#">Read Our FAQ</a>
     </div>
@@ -88,7 +91,7 @@ get_header();
         <h2>Benefits of Tai Chi</h2>
 
         <div class="benefits-image">
-            <img src="/wp-content/themes/parkland-theme/images/benefits-of-taichi.png" alt="tai chi symbol">
+            <img src="/wp-content/themes/parkland-theme/images/benefits-of-taichi.webp" alt="tai chi symbol">
         </div>
 
         <div class="benefits-text">

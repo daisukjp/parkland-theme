@@ -612,6 +612,36 @@ table {
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 18px;
+  position: relative;
+}
+.mission-statement-section .mission-statement-title {
+  position: relative;
+}
+.mission-statement-section .mission-statement .vector-1 {
+  background: url("../images/brush-vector-1.png") no-repeat;
+  background-size: 100% 30px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  z-index: -1;
+}
+@media (min-width: 450px) {
+  .mission-statement-section .mission-statement .vector-1 {
+    top: 11px;
+  }
+}
+@media (min-width: 600px) {
+  .mission-statement-section .mission-statement .vector-1 {
+    top: 95px;
+    background-size: 100% 38px;
+  }
+}
+@media (min-width: 845px) {
+  .mission-statement-section .mission-statement .vector-1 {
+    top: 27px;
+    max-width: 834.48px;
+  }
 }
 .mission-statement-section .mission-statement p {
   font-family: "Josefin Sans", sans-serif;
