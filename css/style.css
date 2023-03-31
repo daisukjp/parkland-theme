@@ -100,7 +100,7 @@ html {
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  font-size: 4.395rem;
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
   text-align: center;
 }
 
@@ -111,7 +111,7 @@ h2, h3, h4 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
 }
 
 h3 {
@@ -119,7 +119,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2.25rem;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
 }
 
 p, ul, li, a, input, button {
@@ -283,7 +283,8 @@ ol[class] {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -390,7 +391,8 @@ footer {
   display: flex;
   gap: 3rem;
   align-items: center;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .site-navigation {
@@ -632,6 +634,73 @@ table {
 /*--------------------------------------------------------------
 # Photo gallery page
 --------------------------------------------------------------*/
+.photo-gallery-banner {
+  background: url("../images/ptc-photo-gallery-banner.webp") center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  height: 60vh;
+  width: 100%;
+}
+
+.photo-gallery-rectangle {
+  position: relative;
+  text-align: center;
+  width: clamp(5rem, 30vw, 27rem);
+  height: 0px;
+  bottom: 30px;
+  border: 10px solid #74865E;
+  margin: auto;
+  z-index: 0;
+}
+
+.photo-gallery-banner h2 {
+  position: relative;
+  margin: auto;
+  padding-top: 15rem;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.photo-gallery-section h2 {
+  display: inline-block;
+  color: #74865E;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .photo-gallery-section h2 {
+    text-align: center;
+  }
+}
+.photo-gallery-section h2 img {
+  position: absolute;
+  top: 0.5rem;
+  left: -1rem;
+  z-index: -1;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .photo-gallery-section h2 img {
+    top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .photo-gallery-section {
+    max-width: 1180px;
+    margin: auto;
+    justify-content: center;
+  }
+  .photo-gallery-section h2 {
+    text-align: left;
+    font-size: 4.395rem;
+  }
+}
 /*--------------------------------------------------------------
 # Search results page
 --------------------------------------------------------------*/
@@ -895,7 +964,8 @@ table {
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -910,7 +980,8 @@ table {
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  clip-path: none;
+  -webkit-clip-path: none;
+          clip-path: none;
   color: #21759b;
   display: block;
   font-size: 0.875rem;
@@ -923,6 +994,4 @@ table {
   top: 5px;
   width: auto;
   z-index: 100000;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
