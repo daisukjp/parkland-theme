@@ -16,10 +16,11 @@
 
 <main>
     <section>
+            <h1>Blog page</h1>
             <div>
                 <h2><?php the_field('blog_page_heading');?></h2>
             </div>
-
+            
 
             <div>
                 <?php
