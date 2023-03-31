@@ -31,7 +31,7 @@
             <h2>Photos of Parkland<img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
         </div>
 
-        <div class="gallery">
+        <div class="gallery-grid">
 
             <?php 
             $args = array(
@@ -45,9 +45,9 @@
 
             $loop = new WP_Query( $args );
 
-            while ( $loop->have_post() ) : $loop->the_post();
+            while ( $loop->have_posts() ) : $loop->the_post();
 
-            $image = wp_get_attachment_image_src( get_the_ID() ); 
+            $image = wp_get_attachment_image_src( get_the_ID(), 'photo-size' ); 
             echo "<img src='" . $image[0] . "'>";
 
             endwhile;

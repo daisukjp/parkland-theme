@@ -276,6 +276,24 @@ img {
 }
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 358px 358px 358px;
+    grid-template-rows: 358px 358px 358px;
+    grid-auto-rows: 100px;
+    grid-gap: 1.5em;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.gallery-grid img {
+    display: flex;
+    width: 358px;
+    height: 358px;
+    object-fit: cover;
+}
+
 @media screen and (min-width: 1100px) {
 
     .photo-gallery-section {
