@@ -1,7 +1,7 @@
 <?php
 
     // template for displaying all photos
-    /* Template Name: Photos */
+
     // all other pages will default to page.php. These pages are useful in that the client cannot change the content on these pages. The content is hard-coded therefore un-editable.
 
     //Please note that this is a wordpress construct of pages and that other 'pages' on your wordpress site may use a different template.
@@ -12,7 +12,11 @@
 
 ?>
 
-<?php get_header(); ?>
+<?php get_header(); 
+
+$picture = $image['sizes']['blog-size'];
+
+?>
 
 <main>
     <section>
@@ -33,11 +37,14 @@
 
         <div class="container">
 
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php if (have_posts()) ; while (have_posts()) ; the_post(); ?>
 
             <?php the_content(); ?>
 
-            <?php endwhile; else: endif: ?>
+
+
+            <img src="<?php echo $picture;?>">
+
         </div>
     </section>
 
