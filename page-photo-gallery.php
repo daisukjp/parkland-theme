@@ -12,11 +12,7 @@
 
 ?>
 
-<?php get_header(); 
-
-$picture = $image['sizes']['blog-size'];
-
-?>
+<?php get_header(); ?>
 
 <main>
     <section>
@@ -35,15 +31,27 @@ $picture = $image['sizes']['blog-size'];
             <h2>Photos of Parkland<img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
         </div>
 
-        <div class="container">
+        <div class="gallery">
 
-            <?php if (have_posts()) ; while (have_posts()) ; the_post(); ?>
+            <?php 
+            $args = array(
+            'post_type' => 'attachment',
+            'post_mime_type' => 'image',
+            'orderby' => 'post_date',
+            'order' => 'desc',
+            'posts_per_page' => '30',
+            'post_status'    => 'inherit'
+            );
 
-            <?php the_content(); ?>
+            $loop = new WP_Query( $args );
 
+            while ( $loop->have_post() ) : $loop->the_post();
 
+            $image = wp_get_attachment_image_src( get_the_ID() ); 
+            echo "<img src='" . $image[0] . "'>";
 
-            <img src="<?php echo $picture;?>">
+            endwhile;
+            ?>
 
         </div>
     </section>
