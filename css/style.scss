@@ -217,20 +217,20 @@ table {
     }
 
     .mission-statement .vector-1 {
-        background: url("../images/brush-vector-1.png") no-repeat;
-        background-size: 100% 30px;
+        background: url("../images/brush-vector-1.svg") no-repeat;
+        background-size: 100% 37px;
         height: 50px;
         width: 100%;
         position: absolute;
-        top: 40px;
+        top: 43px;
         z-index: -1;
         @media (min-width: 450px) {
-            top: 11px;
+            top: 9px;
         }
 
         @include mixins.break(small) { 
             top: 95px;      
-            background-size: 100% 38px;
+            background-size: 100% 40px;
         }
 
         @media (min-width: 845px) {
