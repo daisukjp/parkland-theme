@@ -27,26 +27,24 @@
             </div>
 
         </div>
-
+    
         <div class="instructors-section">
-            <?php while ( have_posts()) : the_post(); ?>
-            <?php $instructor_name = get_field('instructor_name'); ?>
-            <?php $image =  wp_get_attachment_image_src(get_sub_field('instructor_image')); ?>
-            <?php $description = get_field('description'); ?>
 
             <h2>Meet Our Instructors <img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
 
 
-            <div class="instructor">
+            <div class="instructor-container-1">
 
                 <div class="instructor-image">
-                <img src="<?php echo $image[0]; ?>"/>
+                    <img src="/wp-content/themes/parkland-theme/images/ptc-john.webp" alt="picture of John" width="360" height="240">
                 </div>
 
                 <div class="instructor-information">
-                    <h3><?php echo $instructor_name;?></h3>
+                    <h3>John</h3>
                     <h4>Instructor Information</h4>
-                    <p><?php echo $description;?></p>
+                    <p>Hi, I am John Tummers,</p>
+                    <p>I have been studying and teaching Tai Chi and Chi Kung for over 40 years.</p>
+                    <p>In 1991, I founded the Parkland Tai Chi Association as a 100% non-profit organization and with many other volunteers continue to pass on the techniques and practices. It gives me utmost pleasure to share this with others.</p>
                 </div>
 
             </div>
@@ -94,6 +92,4 @@
     </section>
 </main>
 
-
-<?php endwhile; ?>
 <?php get_footer(); ?>
