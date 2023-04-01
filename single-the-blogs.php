@@ -12,13 +12,12 @@ get_header();
 <div class="single-blog-post-container">
 <div class="single-blog-post-banner">
     <div class="single-blog-post-wrap">
-        <h1>SINGLE BLOG</h1>
+        <h2>SINGLE BLOG</h2>
     </div>
 </div>
 <?php if(have_posts()) : ?>
     <?php while(have_posts()) : the_post(); ?>
         <article <?php post_class();?> id="post-<?php the_ID();?>" >
-        <!-- <h2>single post</h2> -->
 
         <div class="individual-blog-heading" ><?php the_title('<h1 class="entry-title">', '</h1>'); ?></div>
 
@@ -40,6 +39,17 @@ get_header();
 
             </div>
     </article>
+
+    <div class="page-change">
+        <div class="previous-page">
+        <!-- <img src="/wp-content/themes/parkland-theme/images/previous-vector.svg" alt="previous vector"> -->
+        <?php previous_post_link('%link', 'Previous'); ?>
+        </div>
+        <div class="next-page">
+        <?php next_post_link('%link', 'Next'); ?>
+        <!-- <img src="/wp-content/themes/parkland-theme/images/next-vector.svg" alt="next vector"> -->
+        </div>
+    </div>
     <?php endwhile; ?>
     <?php endif; ?>
 </div>

@@ -926,19 +926,66 @@ table {
 # Single blog page
 --------------------------------------------------------------*/
 .single-blog-post-container .single-blog-post-banner {
-  background: url("../images/ptc-home-page-banner.webp") center no-repeat;
+  background: url("../images/test-background-1.jpg") right no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-  height: 38vh;
+  height: 18vh;
   width: 100%;
-  position: relative;
-}
-.single-blog-post-container .single-blog-post-banner .single-blog-post-wrap {
-  position: absolute;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  top: 50%;
-  left: 50%;
+}
+.single-blog-post-container .single-blog-post-banner h2 {
+  font-size: 28.13px;
+  text-align: center;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.single-blog-post-container article {
+  padding: 72px 20px;
+}
+.single-blog-post-container article .individual-blog-heading .entry-title {
+  font-size: 28.13px;
+  color: #74865E;
+  text-transform: uppercase;
+  margin-bottom: 72px;
+}
+.single-blog-post-container article .individual-blog-flex-container p {
+  margin-bottom: 36px;
+}
+.single-blog-post-container .page-change {
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+}
+.single-blog-post-container .page-change .next-page, .single-blog-post-container .page-change .previous-page {
+  display: flex;
+  align-items: center;
+}
+.single-blog-post-container .page-change .next-page a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22.5px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.single-blog-post-container .page-change .next-page a::after {
+  content: url("../images/next-vector.svg");
+  display: flex;
+}
+.single-blog-post-container .page-change .previous-page a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22.5px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.single-blog-post-container .page-change .previous-page a::before {
+  content: url("../images/previous-vector.svg");
+  display: flex;
 }
 
 /*--------------------------------------------------------------
