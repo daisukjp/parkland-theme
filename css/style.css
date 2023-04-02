@@ -925,6 +925,11 @@ table {
 /*--------------------------------------------------------------
 # Single blog page
 --------------------------------------------------------------*/
+.single-blog-post-container {
+  /* pagination for single post */
+  /* Small Size View */
+  /* Medium Size View */
+}
 .single-blog-post-container .single-blog-post-banner {
   background: url("../images/test-background-1.jpg") right no-repeat;
   background-size: cover;
@@ -943,7 +948,7 @@ table {
   font-weight: 500;
 }
 .single-blog-post-container article {
-  padding: 72px 20px;
+  padding: 72px 20px 0 20px;
 }
 .single-blog-post-container article .individual-blog-heading .entry-title {
   font-size: 28.13px;
@@ -986,6 +991,31 @@ table {
 .single-blog-post-container .page-change .previous-page a::before {
   content: url("../images/previous-vector.svg");
   display: flex;
+}
+@media (min-width: 600px) {
+  .single-blog-post-container .single-blog-post-banner {
+    height: 25vh;
+  }
+  .single-blog-post-container article {
+    max-width: 780px;
+    margin: auto;
+  }
+}
+@media (min-width: 800px) {
+  .single-blog-post-container .single-blog-post-banner {
+    height: 35vh;
+  }
+  .single-blog-post-container .single-blog-post-banner h2 {
+    font-size: 43.95px;
+  }
+  .single-blog-post-container article .individual-blog-heading .entry-title {
+    font-size: 64px;
+  }
+}
+@media (min-width: 1100px) {
+  .single-blog-post-container .single-blog-post-banner {
+    height: 45vh;
+  }
 }
 
 /*--------------------------------------------------------------

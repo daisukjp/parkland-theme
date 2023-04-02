@@ -42,12 +42,10 @@ get_header();
 
     <div class="page-change">
         <div class="previous-page">
-        <!-- <img src="/wp-content/themes/parkland-theme/images/previous-vector.svg" alt="previous vector"> -->
         <?php previous_post_link('%link', 'Previous'); ?>
         </div>
         <div class="next-page">
         <?php next_post_link('%link', 'Next'); ?>
-        <!-- <img src="/wp-content/themes/parkland-theme/images/next-vector.svg" alt="next vector"> -->
         </div>
     </div>
     <?php endwhile; ?>
