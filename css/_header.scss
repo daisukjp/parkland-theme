@@ -25,13 +25,12 @@ header svg{
 @media (max-width: 50rem)  {
     .main-navigation{
         display: block;
-
         a{
             border-bottom: 1px solid black;
             padding-left: 1rem;
             padding-top: 2.5rem;
             height: 8rem;
-            background: $matcha-green;;
+            background: $matcha-green;
         }
     }
 
@@ -78,7 +77,10 @@ header svg{
         margin: 0 auto;
     }
 
+}
 
+.top-of-page-banner-text.clicked {
+    z-index: -1;
 }
 
 .search{

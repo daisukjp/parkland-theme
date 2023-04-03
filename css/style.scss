@@ -14,7 +14,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 */
 
 @use 'assets/base';
-@use 'assets/colors';
+@use 'assets/colors' as *;
 @use 'assets/forms';
 @use 'assets/backgrounds';
 @use 'assets/typography';
@@ -22,7 +22,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 @use 'reset';
 @use 'footer';
 @use 'assets/mixins';
-@use 'assets/colors' as *;
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -109,7 +108,7 @@ table {
 .hero-banner{
     background: url("../images/ptc-home-page-banner.webp") center no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    box-shadow:  rgba(0, 0, 0, 0.3);
     height: 60vh;
     width: 100%;
 }
@@ -117,8 +116,33 @@ table {
 /*--------------------------------------------------------------
 # About-us page
 --------------------------------------------------------------*/
+
+.about-us-banner-image {
+    background: url("../images/ptc-about-us-banner.jpg") center center no-repeat;
+    background-size: 100% auto;
+    box-shadow:  rgba(0, 0, 0, 0.3);
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: white;
+        font-weight: 700;
+        position: relative;
+        z-index: 999;
+    }
+    img{
+        position: absolute;
+        top: 1.5rem;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
 .about-us-container h2{
     text-align: left;
+    line-height: 1;
 }
 
 .about-us-container{
@@ -130,28 +154,138 @@ table {
     display: flex;
     margin: 0 auto;
     align-items: center;
+    justify-content: space-between;
     gap: 2rem;
-
     p{
         max-width: 65ch;
+    }
+}
+
+.about-us-section-written-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    p{
+        max-width: 56ch;
+    }
+}
+
+.about-us-section h1 {
+    position: relative;
+        @media (max-width: 800px) {
+            text-align: center;
+        }
+    img {
+        position: absolute;
+        top: 0.5rem;
+        left: -1rem;
+        z-index: -1;
+        width: 100%;
+        @media (max-width:800px) {
+            top: .5rem;
+        }
     }
 }
 
 .contact-info-section{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    margin: 9rem auto;
     gap: 2rem;
-
-    .about-us-contact-info{
+    .about-contact-info{
         flex-grow: 1;
+        ul{
+        padding-left: 0rem;
+        }
+        span{
+            font-size: 2.2rem;
+            font-family: "josefin sans";
+            font-weight: 700;
+        }
+    }
+    .google-map{
+        padding-right: 1.5%;
     }
 }
 
 .faq-item h4 {
     text-align: left;
 }
+
+.faq-container{
+    h1 {    
+        margin-top: 2rem;
+        color: $matcha-green;
+        }
+}
+
+.about-contact-info{
+        h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $matcha-green;
+            @media (max-width: 800px) {
+                text-align: center;
+            }
+        }
+}
+.about-us-faq {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+    div {
+        width: 49%;
+        padding: 2rem; 
+        background-color: $approx-pampas;
+        border-radius: 6px;
+        margin: 0 auto;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        h4{
+            font-weight: 700;
+            margin-bottom: 1rem;
+
+        }
+    }
+
+}
+
+@media (max-width: 800px) {
+    .about-us-container h1 {
+        width: 100%;
+    }
+
+    .about-us-section-intro,
+    .about-contact-info,
+    .contact-info-section {
+        flex-direction: column;
+        margin: 2%;
+    }
+
+    .about-us-faq {
+        flex-direction: column;
+        justify-content: center;
+
+        div {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+video{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.ptc-video{
+    margin: 6rem 0;
+}
+
 
 /*--------------------------------------------------------------
 # Instructors page
@@ -211,6 +345,100 @@ table {
 /*--------------------------------------------------------------
 # Class details page
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# 404 page
+--------------------------------------------------------------*/
+.taichi-quote-container{
+    background: $matcha-green;
+    padding: 3rem;
+    box-shadow: rgba(60, 64, 67, 0.20) 0px 1px 2px 0px, rgba(60, 64, 67, 0.10) 0px 1px 3px 1px;
+    margin-bottom: 4rem;
+    div{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+.moveset-section{
+    max-width: 1280px;
+    margin: 0 auto;
+        h1 {
+            color: $matcha-green;
+            margin-bottom: 2rem;
+        }
+}
+
+.moveset-section  li {
+    list-style-type: decimal;
+}
+.accordion-content {
+    display: none;
+}
+
+.accordion-active .accordion-content {
+    display: block;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fcfcfc;
+    margin-bottom: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.20) 0px 1px 2px 0px, rgba(60, 64, 67, 0.10) 0px 1px 3px 1px;
+
+}
+
+.accordion-header {
+    background-color: $matcha-green;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.accordion-header:hover {
+    background-color: $approx-pampas;
+}
+
+.active .accordion-header{
+    background-color: $approx-pampas;
+}
+
+.accordion-header h4:after {
+    content: "\002B";
+    color: black;
+    float: right;
+    margin-bottom: 3rem;
+    margin-left: 5px;
+}
+
+.active .accordion-header h4:after {
+    content: "\2212";
+}
+
+.accordion-content {
+    padding: 10px;
+    transition: max-height 0.5s ease-out;
+}
+
+.active .accordion-content {
+    ol {
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+@media (min-width: 800px) {
+.active .accordion-content {
+    ol {
+            columns: 3;
+            margin: 0 auto;
+            text-align: left;
+            padding-left: 14rem;
+        }
+}
+}
 
 /*--------------------------------------------------------------
 # Blog posts page
