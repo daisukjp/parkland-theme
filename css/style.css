@@ -740,11 +740,36 @@ table {
   margin: auto;
 }
 .benefits-of-taichi .wrap-benefits-of-taichi .benefits-image img {
-  max-width: 350px;
+  max-width: 100%;
 }
 .benefits-of-taichi .wrap-benefits-of-taichi .benefits-text {
   max-width: 448px;
   margin: auto;
+}
+@media (min-width: 660px) {
+  .benefits-of-taichi .wrap-benefits-of-taichi {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: flex-start;
+    max-width: 1162px;
+  }
+  .benefits-of-taichi .wrap-benefits-of-taichi .benefits-image {
+    grid-row: 1/span 2;
+    grid-column: 1/span 1;
+  }
+  .benefits-of-taichi .wrap-benefits-of-taichi .benefits-image img {
+    max-width: 100%;
+  }
+  .benefits-of-taichi .wrap-benefits-of-taichi h2 {
+    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+    font-size: 35.2px;
+    margin-bottom: 0;
+  }
+  .benefits-of-taichi .wrap-benefits-of-taichi .benefits-text {
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+  }
 }
 
 /* Desktop Menu */
@@ -806,28 +831,11 @@ table {
     gap: 1rem;
   }
   /* Benefits of Tai Chi section (med) */
-  .benefits-of-taichi .wrap-benefits-of-taichi {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    align-items: flex-start;
-    max-width: 1162px;
-  }
-  .benefits-of-taichi .wrap-benefits-of-taichi .benefits-image {
-    grid-row: 1/span 2;
-    grid-column: 1/span 1;
-  }
-  .benefits-of-taichi .wrap-benefits-of-taichi .benefits-image img {
-    max-width: 100%;
-  }
   .benefits-of-taichi .wrap-benefits-of-taichi h2 {
     grid-row: 1/span 1;
     grid-column: 2/span 1;
     font-size: 43.95px;
     margin-bottom: 0;
-  }
-  .benefits-of-taichi .wrap-benefits-of-taichi .benefits-text {
-    grid-row: 2/span 1;
-    grid-column: 2/span 1;
   }
 }
 @media (min-width: 1100px) {

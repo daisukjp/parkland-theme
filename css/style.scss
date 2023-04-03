@@ -354,7 +354,7 @@ table {
             margin: auto;
     
             img {
-                max-width: 350px;
+                max-width: 100%;
             }
         }
     
@@ -362,7 +362,35 @@ table {
             max-width: 448px;
             margin: auto;
         }
-        
+    }
+    @media (min-width: 660px) {
+        .wrap-benefits-of-taichi {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            align-items: flex-start;
+            max-width: 1162px;
+    
+            .benefits-image {
+                grid-row: 1 / span 2;
+                grid-column: 1 / span 1;
+    
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            h2 {
+                grid-row: 1 / span 1;
+                grid-column: 2 / span 1;
+                font-size: 35.2px;
+                margin-bottom: 0;
+            }
+            
+            .benefits-text {
+                grid-row: 2 / span 1;
+                grid-column: 2 / span 1;
+            }
+        }
     }
 }
 
@@ -452,30 +480,11 @@ table {
     /* Benefits of Tai Chi section (med) */
     .benefits-of-taichi {
         .wrap-benefits-of-taichi {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto;
-            align-items: flex-start;
-            max-width: 1162px;
-    
-            .benefits-image {
-                grid-row: 1 / span 2;
-                grid-column: 1 / span 1;
-    
-                img {
-                    max-width: 100%;
-                }
-            }
-
             h2 {
                 grid-row: 1 / span 1;
                 grid-column: 2 / span 1;
                 font-size: 43.95px;
                 margin-bottom: 0;
-            }
-            
-            .benefits-text {
-                grid-row: 2 / span 1;
-                grid-column: 2 / span 1;
             }
         }
     }
