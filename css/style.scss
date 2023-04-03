@@ -628,7 +628,7 @@ main {
 
     .blog-flex-item {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-template-rows: auto auto;
         grid-gap: 20px;
         margin-bottom: 72px;
@@ -708,6 +708,16 @@ main {
 
             h2 {
                 font-size: 43.95px;
+            }
+        }
+
+        .blog-post-btn {
+            width: 258px;
+
+        .blog-post-content {
+            img {
+                height: 443px;
+                object-fit: cover;
             }
         }
     }
