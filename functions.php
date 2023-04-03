@@ -214,7 +214,7 @@ function acf_add_allowed_svg_tag( $tags, $context ) {
 add_image_size('blog-single-size', 650, 800, array('left', 'top') );
 
 
-// add_image_size('blog-size', 400, 600, array('left', 'top') );
+// add_image_size('blog-size', 580, 443, array('left', 'top') );
 
 
 

@@ -999,14 +999,14 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
   main .blog-post-banner {
     height: 25vh;
   }
-  main article {
-    max-width: 780px;
-    margin: auto;
-  }
 }
 @media (min-width: 800px) {
   main section {
     padding: 72px 50px;
+  }
+  main section h2 {
+    font-size: 64px;
+    font-weight: 600;
   }
   main .blog-flex-item {
     grid-gap: 72px;

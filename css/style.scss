@@ -684,16 +684,18 @@ main {
         .blog-post-banner {
             height: 25vh;
         }
-        article {
-            max-width: 780px;
-            margin: auto;
-        }
     }
 
     /* Medium Size View */
     @include mixins.break(med) {
+        
         section {
             padding: 72px 50px;
+
+            h2 {
+                font-size: 64px;
+                font-weight: 600;
+            }
         }
 
         .blog-flex-item {
