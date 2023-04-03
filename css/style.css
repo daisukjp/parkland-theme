@@ -1019,6 +1019,9 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
   main .blog-post-banner h2 {
     font-size: 43.95px;
   }
+  main .blog-post-btn {
+    width: 258px;
+  }
   main .blog-post-content img {
     height: 443px;
     -o-object-fit: cover;
