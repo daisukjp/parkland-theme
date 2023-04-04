@@ -710,7 +710,7 @@ table {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 358px;
-  height: auto;
+  height: 358px;
   vertical-align: middle;
 }
 

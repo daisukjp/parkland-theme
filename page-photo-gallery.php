@@ -31,7 +31,6 @@
             <h2>Photos of Parkland<img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
         </div>
     </section>
-    <section>
         <div class="gallery-container">
             <ul class="image-gallery">
                 <?php 
