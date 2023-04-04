@@ -131,11 +131,37 @@ table {
                 font-size: 28.1px;
                 font-weight: 600;
                 margin: 18px 0;
+                position: relative;
+                z-index: 10;
             }
 
             p {
                 text-align: center;
                 font-size: 18px
+            }
+
+            /* brush for heading 1*/
+            .vector-2 {
+                background: url("../images/brush-vector-3.svg") no-repeat;
+                background-size: 96% 50px;
+                height: 50px;
+                width: 100%;
+                position: absolute;
+                top: 87px;
+                z-index: 5;
+                @media (min-width: 450px) {
+                    top: 9px;
+                }
+
+                @include mixins.break(small) { 
+                    top: 95px;      
+                    background-size: 100% 40px;
+                }
+
+                @media (min-width: 845px) {
+                    top: 27px;
+                    max-width: 834.48px;
+                }
             }
 
             .banner-btn-flex {

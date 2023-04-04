@@ -544,15 +544,44 @@ table {
   padding: 2rem;
   margin: 2rem;
   top: 18rem;
+  /* brush for heading 1*/
 }
 .hero-banner .wrap-home-page-container .overlay-box h2 {
   font-size: 28.1px;
   font-weight: 600;
   margin: 18px 0;
+  position: relative;
+  z-index: 10;
 }
 .hero-banner .wrap-home-page-container .overlay-box p {
   text-align: center;
   font-size: 18px;
+}
+.hero-banner .wrap-home-page-container .overlay-box .vector-2 {
+  background: url("../images/brush-vector-3.svg") no-repeat;
+  background-size: 96% 50px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 87px;
+  z-index: 5;
+}
+@media (min-width: 450px) {
+  .hero-banner .wrap-home-page-container .overlay-box .vector-2 {
+    top: 9px;
+  }
+}
+@media (min-width: 600px) {
+  .hero-banner .wrap-home-page-container .overlay-box .vector-2 {
+    top: 95px;
+    background-size: 100% 40px;
+  }
+}
+@media (min-width: 845px) {
+  .hero-banner .wrap-home-page-container .overlay-box .vector-2 {
+    top: 27px;
+    max-width: 834.48px;
+  }
 }
 .hero-banner .wrap-home-page-container .overlay-box .banner-btn-flex {
   display: flex;
