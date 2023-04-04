@@ -30,29 +30,30 @@
         <div class="photo-gallery-section">
             <h2>Photos of Parkland<img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
         </div>
+    </section>
+    <section>
+        <div class="gallery-container">
+            <ul class="image-gallery">
+                <?php 
+                $args = array(
+                'post_type' => 'attachment',
+                'post_mime_type' => 'image',
+                'orderby' => 'post_date',
+                'order' => 'desc',
+                'posts_per_page' => '30',
+                'post_status'    => 'inherit'
+                );
 
-        <div class="gallery-grid">
+                $loop = new WP_Query( $args );
 
-            <?php 
-            $args = array(
-            'post_type' => 'attachment',
-            'post_mime_type' => 'image',
-            'orderby' => 'post_date',
-            'order' => 'desc',
-            'posts_per_page' => '30',
-            'post_status'    => 'inherit'
-            );
+                while ( $loop->have_posts() ) : $loop->the_post();
 
-            $loop = new WP_Query( $args );
+                $image = wp_get_attachment_image_src( get_the_ID(), 'photo-size' ); 
+                echo "<li><img src='" . $image[0] . "'></li>";
 
-            while ( $loop->have_posts() ) : $loop->the_post();
-
-            $image = wp_get_attachment_image_src( get_the_ID(), 'photo-size' ); 
-            echo "<img src='" . $image[0] . "'>";
-
-            endwhile;
-            ?>
-
+                endwhile;
+                ?>
+            </ul>
         </div>
     </section>
 
