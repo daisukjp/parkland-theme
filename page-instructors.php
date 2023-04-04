@@ -33,6 +33,23 @@
             <h2>Meet Our Instructors <img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
 
 
+            <div>
+                <?php
+                    $args = array(
+                        'post_type'      => 'parkland-instructors',
+                        'posts_per_page' => 15,
+                        'order' => 'DESC',
+                    );
+                    $loop = new WP_Query($args);
+                    while ( $loop->have_posts() ) {
+                        $loop->the_post();
+                        get_template_part('template-parts/content', 'instructors');
+                    }?>
+            </div>
+
+
+
+
             <div class="instructor-container-1">
 
                 <div class="instructor-image">
