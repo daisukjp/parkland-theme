@@ -828,7 +828,9 @@ table {
   .more-about-us .wrap-more-about-us {
     flex-flow: nowrap;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
+    margin: 72px 50px;
+    max-width: 128rem;
   }
   /* Benefits of Tai Chi section (med) */
   .benefits-of-taichi .wrap-benefits-of-taichi h2 {

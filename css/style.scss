@@ -473,7 +473,9 @@ table {
         .wrap-more-about-us {
             flex-flow: nowrap;
             justify-content: space-between;
-            gap: 1rem;
+            gap: 2rem;
+            margin: 72px 50px;
+            max-width: 128rem;
         }
     }
 
