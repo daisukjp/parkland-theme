@@ -31,28 +31,28 @@
             <h2>Photos of Parkland<img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
         </div>
     </section>
+    <section>
         <div class="gallery-container">
+            <?php
+                while ( have_posts() ) :
+                    the_post();
+
+                    // Retrieve the gallery data
+                    $gallery = get_post_gallery(get_the_ID(), false);
+                    $ids = explode(',', $gallery['ids']);
+                ?>
             <ul class="image-gallery">
-                <?php 
-                $args = array(
-                'post_type' => 'attachment',
-                'post_mime_type' => 'image',
-                'orderby' => 'post_date',
-                'order' => 'desc',
-                'posts_per_page' => '30',
-                'post_status'    => 'inherit'
-                );
-
-                $loop = new WP_Query( $args );
-
-                while ( $loop->have_posts() ) : $loop->the_post();
-
-                $image = wp_get_attachment_image_src( get_the_ID(), 'photo-size' ); 
-                echo "<li><img src='" . $image[0] . "'></li>";
-
-                endwhile;
+                <?php
+                foreach ($ids as $id) {
+                    $image = wp_get_attachment_image_src( $id, 'photo-size' ); 
+                    echo '<li><a href="' . $image[0] . '"><img src="' . $image[0] . '" /></a></li>';
+                }
                 ?>
             </ul>
+            <?php
+            endwhile;
+            ?>
+
         </div>
     </section>
 
