@@ -11,14 +11,19 @@
 
 <!-- What goes inside the loop is up to us. Use markup around the content -->
 <div class="instructor-container-1">
-    
-<?php
-  $image = get_field('instructor_image');
-  get_field('instructor_content')
-?>
-<?php if( !empty( $image ) ): ?>
-  <img src="<?php echo esc_url($image['sizes']['instructor-size']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
-<?php endif ?>
-<?php the_title(); ?>
-<?php the_field('instructor_content'); ?>
-</div>
+    <div class="instructor-image">
+        <?php
+        $image = get_field('instructor_image');
+        get_field('instructor_content');
+        ?>
+
+        <?php if( !empty( $image ) ): ?>
+        <img src="<?php echo esc_url($image['sizes']['instructor-size']); ?>" width="580" height="380" alt="<?php echo esc_attr($image['alt']); ?>">
+    </div>
+        <?php endif ?>
+    <div class="instructor-information">        
+        <h3><?php the_title(); ?></h3>
+        <h4>Instructor Information</h4>
+        <?php the_field('instructor_content'); ?>
+    </div>
+</div> 
