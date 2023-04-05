@@ -1055,6 +1055,149 @@ video {
 /*--------------------------------------------------------------
 # Instructors page
 --------------------------------------------------------------*/
+.instructors-banner {
+  background: url("../images/ptc-instructors-page-banner.webp") center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  height: 60vh;
+  width: 100%;
+}
+
+.instructors-rectangle {
+  position: relative;
+  text-align: center;
+  width: clamp(5rem, 30vw, 27rem);
+  height: 0px;
+  bottom: 30px;
+  border: 10px solid #74865E;
+  margin: auto;
+  z-index: 0;
+}
+
+.instructors-banner h2 {
+  position: relative;
+  margin: auto;
+  padding-top: 15rem;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.instructor-container-1,
+.instructor-container-2,
+.instructor-container-3,
+.instructor-container-4 {
+  margin-bottom: 72px;
+}
+
+.instructors-section {
+  padding: 0px 20px 0px 20px;
+}
+
+.instructors-section h2 {
+  display: inline-block;
+  color: #74865E;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .instructors-section h2 {
+    text-align: center;
+  }
+}
+.instructors-section h2 img {
+  position: absolute;
+  top: 0.5rem;
+  left: -1rem;
+  z-index: -1;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .instructors-section h2 img {
+    top: 0.5rem;
+  }
+}
+
+.instructor-image,
+.instructor-information {
+  max-width: 360px;
+  margin: auto;
+}
+
+.instructor-information h3 {
+  color: #74865E;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 36px 0px 36px 0px;
+}
+
+.instructor-information h4 {
+  margin: 36px 0px 36px 0px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1100px) {
+  .instructors-section {
+    max-width: 1180px;
+    margin: auto;
+  }
+  .instructors-section h2 {
+    text-align: left;
+    font-size: 4.395rem;
+  }
+  .instructor-container-1,
+  .instructor-container-2,
+  .instructor-container-3,
+  .instructor-container-4 {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 144px auto;
+    gap: 20px;
+  }
+  .instructor-container-1 .instructor-information,
+  .instructor-container-3 .instructor-information {
+    margin-left: 0px;
+    margin-right: auto;
+  }
+  .instructor-container-1 .instructor-image,
+  .instructor-container-3 .instructor-image {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+  .instructor-container-2 .instructor-information,
+  .instructor-container-4 .instructor-information {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+  .instructor-container-2 .instructor-image,
+  .instructor-container-4 .instructor-image {
+    margin-left: 0px;
+    margin-right: auto;
+  }
+  .instructor-container-2 .instructor-image,
+  .instructor-container-4 .instructor-image {
+    order: 2;
+  }
+  .instructor-information h3,
+  .instructor-information h4 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+  .instructor-information,
+  .instructor-image {
+    max-width: 580px;
+    margin-top: 0;
+  }
+  .instructor-image img {
+    width: 580px;
+    margin: 0px 0px 0px 0px;
+  }
+}
 /*--------------------------------------------------------------
 # Booking/Classes page
 --------------------------------------------------------------*/
