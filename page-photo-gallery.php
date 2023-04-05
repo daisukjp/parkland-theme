@@ -15,22 +15,22 @@
 <?php get_header(); ?>
 
 <main>
-    <section>
-        <div class="photo-gallery-container">
 
-            <div class="photo-gallery-banner">
-                <h2>Photo Gallery</h2>
+    <div class="photo-gallery-container">
 
-                <div class="photo-gallery-rectangle">
-                </div>
+        <div class="photo-gallery-banner">
+            <h2>Photo Gallery</h2>
+
+            <div class="photo-gallery-rectangle">
             </div>
-
         </div>
 
-        <div class="photo-gallery-section">
-            <h2>Photos of Parkland<img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
-        </div>
-    </section>
+    </div>
+
+    <div class="photo-gallery-section">
+        <h2>Photos of Parkland<img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
+    </div>
+
     <section>
         <div class="gallery-container">
             <?php
