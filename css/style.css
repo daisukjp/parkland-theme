@@ -1191,7 +1191,8 @@ video {
 
 @media (min-width: 800px) {
   .active .accordion-content ol {
-    columns: 3;
+    -moz-columns: 3;
+         columns: 3;
     margin: 0 auto;
     text-align: left;
     padding-left: 14rem;
@@ -1353,9 +1354,7 @@ div.wpforms-container-full .wpforms-form .wpforms-checkbox-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-multiplechoice-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-list-3-columns ul {
   display: -ms-flex;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -1505,6 +1504,10 @@ button#wpforms-submit-343:hover {
   text-transform: uppercase;
   font-weight: bold;
   z-index: 1;
+}
+
+.photo-gallery-section {
+  padding: 0px 20px 0px 20px;
 }
 
 .photo-gallery-section h2 {
