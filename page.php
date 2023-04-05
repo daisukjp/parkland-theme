@@ -16,8 +16,6 @@
 
  <?php get_header(); ?>
 	 <main>
-		 <h2>This is the page.php</h2>
-		 <h3>Page under construction! Check back later!</h3>
 		 <?php
 			 if ( have_posts() ) :
 				 while ( have_posts() ) : the_post();
@@ -26,6 +24,9 @@
 				 endwhile;
 			 endif;
 		 ?>
+
+
+
 
 	 </main>
 

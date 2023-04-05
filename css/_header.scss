@@ -12,7 +12,6 @@ margin-bottom: 2rem;
 header svg{
     height: 6rem;
 }
-
 .main-navigation{
     display: flex;
     justify-content: space-between;
@@ -21,17 +20,15 @@ header svg{
     max-width: 128rem;
 }
 
-
 @media (max-width: 50rem)  {
     .main-navigation{
         display: block;
-
         a{
             border-bottom: 1px solid black;
             padding-left: 1rem;
             padding-top: 2.5rem;
             height: 8rem;
-            background: $matcha-green;;
+            background: $matcha-green;
         }
     }
 
@@ -53,7 +50,6 @@ header svg{
     .search {
         display: none;
     }
-
 
     .weather-and-button-flex{
         display: flex;
@@ -78,7 +74,10 @@ header svg{
         margin: 0 auto;
     }
 
+}
 
+.top-of-page-banner-text.clicked {
+    z-index: -1;
 }
 
 .search{
@@ -97,7 +96,6 @@ header svg{
     cursor: pointer;
 }
 
-
 .navigation-menu {
     display: flex;
     align-items: center;
@@ -108,7 +106,6 @@ header svg{
     max-width: 320px;
     min-width: 320px;
 }
-
 
 .current-weather{
     display: flex;

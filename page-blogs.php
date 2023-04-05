@@ -15,13 +15,17 @@
 <?php get_header(); ?>
 
 <main>
+    <div class="blog-post-banner">
+        <div class="blog-post-wrap">
+            <h2>BLOG</h2>
+        </div>
+    </div>
     <section>
+            
             <div>
                 <h2><?php the_field('blog_page_heading');?></h2>
             </div>
-
-
-            <div>
+            
                 <?php
                     $args = array(
                         'post_type'      => 'the-blogs',
@@ -33,7 +37,6 @@
                         $loop->the_post();
                         get_template_part('template-parts/content', 'blog');
                     }?>
-            </div>
     </section>
 </main>
 
