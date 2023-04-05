@@ -148,19 +148,23 @@ table {
                 position: absolute;
                 top: 87px;
                 z-index: 5;
-                @media (min-width: 450px) {
-                    top: 9px;
-                }
 
                 @include mixins.break(small) { 
-                    top: 95px;      
+                    top: 102px;      
                     background-size: 100% 40px;
+                    background: url(../images/brush-vector-3.svg) center no-repeat;
+                    height: 42px;
+                    width: 70%;
+                    position: absolute;
+                    // top: 86px;
+                    z-index: 5;
+                    left: 86px;
                 }
 
-                @media (min-width: 845px) {
-                    top: 27px;
-                    max-width: 834.48px;
-                }
+                // @media (min-width: 845px) {
+                //     top: 27px;
+                //     max-width: 834.48px;
+                // }
             }
 
             .banner-btn-flex {
@@ -428,7 +432,11 @@ table {
                 max-width: 580px;
                 top: 22rem;
                 padding: 3rem 2rem;
-                margin: 50px;
+                // margin: 50px;
+
+                @media (min-width: 625px) {
+                    margin: 0 50px;
+                }
     
                 p {
                     max-width: 481.41px;
