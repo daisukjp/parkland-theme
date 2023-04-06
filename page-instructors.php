@@ -20,10 +20,7 @@
     <div class="instructors-page-container">
 
         <div class="instructors-banner">
-            <h2>Instructors</h2>
-
-            <div class="instructors-rectangle">
-            </div>
+            <h2>Instructors<img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke"></h2>
         </div>
 
     </div>
