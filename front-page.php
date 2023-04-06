@@ -10,68 +10,106 @@ get_header();
 ?>
 
 <div class="home-page-container">
-
 <div class="hero-banner">
+    <div div class="wrap-home-page-container">
     <div class="overlay-box">
         <h2>Welcome to Parkland Tai Chi, where Health is for Life.</h2>
         <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
-        <button>Book A Class</button>
-        <button>Read More</button>
+        <div class="banner-btn-flex">
+            <a href="http://parklandtaichi.web.dmitcapstone.ca/parkland-taichi/classes/" target="_blank" class="btn-book-class banner-btn">Book A Class</a>
+            <a href="http://parklandtaichi.web.dmitcapstone.ca/parkland-taichi/about-us/#about-us" target="_blank"  class="btn-read-more banner-btn">Read More</a>
+        </div>
+    </div>
     </div>
 </div>
 
 <div class="mission-statement-section">
+    <div class="wrap-mission-statement">
     <div class="mission-statement">
-        <h1>Health and Longevity</h1>
+        <div class="mission-statement-title">
+            <h1>Health & Longevity</h1>
+            <div class="vector-1">
+            </div>
+        </div>
         <p>
-        At Parkland Tai Chi our aim is to improve circulation, balance and flexibility. We look to provide our clients with a method of deep relaxation and focused calmness to provide a sense of peace in a otherwise chaotic world.
+        At Parkland Tai Chi our aim is to improve circulation,  balance and flexibility. We look to provide our clients with a method of deep relaxation and focused calmness to provide a sense of peace in a otherwise chaotic world.
         </p>
     </div>
-
-    <div class="taichi-symbols">
-        <p>We offer Beginner, Intermediate, and Advance Tai Chi classes</p>
-        <p>We have an all-levels Chi Kung class from multiple disciplines and techniques</p>
-        <p>We give Advance individual teaching at our Saturday open practice session</p>
     </div>
+
+    <div class="taichi-symbols-section">
+        <div class="wrap-taichi-symbol">
+        <div class="taichi-vector">
+            <img src="/parkland-taichi/wp-content/themes/parkland-theme/images/Vector-icon-3.png" alt="tai chi symbol" style="width:150px;height:170px">
+            <p>We offer Beginner, Intermediate, and Advanced Tai Chi classes</p>
+        </div>
+        <div class="taichi-vector">
+            <img src="/parkland-taichi/wp-content/themes/parkland-theme/images/Vector-1.png" alt="tai chi symbol" style="width:190px;height:180px">
+            <p>We have an all-levels Chi Kung class from multiple disciplines and techniques
+
+            </p>
+        </div>
+        <div class="taichi-vector">
+            <img src="/parkland-taichi/wp-content/themes/parkland-theme/images/Vector-2.png" alt="tai chi symbol" style="width:210px;height:170px">
+            <p>We give Advance individual teaching at our Saturday open practice session
+
+            </p>
+        </div>
+        </div>
+    </div>
+    
 </div>
 
 <div class="more-about-us">
-    <div class="read-our-blog">
-        <p>Text here...</p>
-        <h3>Read Our Blog</h3>
+    <h2>More About Us</h2>
+    <div class="wrap-more-about-us">
+    <div class="read-our-blog more-about-images">
+        <img src="/parkland-taichi/wp-content/themes/parkland-theme/images/more-about-us3.webp" alt="tai chi symbol" style="width:380px">
+        <p>
+            Looking to gain a deeper understanding about Tai Chi?
+        <a href="http://parklandtaichi.web.dmitcapstone.ca/parkland-taichi/blogs/" target="_blank"  >Read Our Blog</a>
     </div>
-    <div class="view-our-gallery">
-        <p>Text here...</p>
-        <h3>View Our Gallery</h3>
+    <div class="view-our-gallery more-about-images">
+        <img src="/parkland-taichi/wp-content/themes/parkland-theme/images/more-about-us1.webp" alt="tai chi symbol" style="width:380px">
+        <p>
+            Visit our photo gallery to get a look into what Parkland Tai Chi is all about.
+        </p>
+        <a href="http://parklandtaichi.web.dmitcapstone.ca/parkland-taichi/photo-gallery/" target="_blank" >View Our Gallery</a>
     </div>
-    <div class="read-our-faq">
-        <p>Text here...</p>
-        <h3>Read Our FAQ</h3>
+    <div class="read-our-faq more-about-images">
+        <img src="/parkland-taichi/wp-content/themes/parkland-theme/images/more-about-us2.webp" alt="tai chi symbol" style="width:380px">
+        <p>
+            Have a question? Be sure to check out our FAQ to learn more.
+        </p>
+        <a href="http://parklandtaichi.web.dmitcapstone.ca/parkland-taichi/about-us/#faq" target="_blank" >Read Our FAQ</a>
+    </div>
     </div>
 </div>
 
 <div class="benefits-of-taichi">
-    <div class="benefits-image">
+    <div class="wrap-benefits-of-taichi">
+        <h2>Benefits of Tai Chi</h2>
 
-    </div>
-    <div class="benefits-text">
-    <h1>Benefits of Tai Chi</h1>
-    <ul>
-        <li>Relieve stress by deep tension release</li>
-        <li>Facilitate relaxation</li>
-        <li>Increase circulation, balance and flexibility</li>
-        <li>Align the skeleton and soft tissue</li>
-        <li>Decrease or eliminate chronic pain</li>
-        <li>Increase the ability to focus and make decisions</li>
-        <li>Revitalize the body and clear the mind</li>
-        <li>Reduce or eliminate common back problems</li>
-        <li>Relieve osteo-arthritis</li>
-        <li>Sustain a balanced perspective</li>
-    </ul>
+        <div class="benefits-image">
+            <img src="/parkland-taichi/wp-content/themes/parkland-theme/images/benefits-of-taichi.webp" alt="tai chi symbol">
+        </div>
+
+        <div class="benefits-text">
+            <ul>
+                <li>Relieve stress by deep tension release</li>
+                <li>Facilitate relaxation</li>
+                <li>Increase circulation, balance and flexibility</li>
+                <li>Align the skeleton and soft tissue</li>
+                <li>Decrease or eliminate chronic pain</li>
+                <li>Increase the ability to focus and make decisions</li>
+                <li>Revitalize the body and clear the mind</li>
+                <li>Reduce or eliminate common back problems</li>
+                <li>Relieve osteo-arthritis</li>
+                <li>Sustain a balanced perspective</li>
+            </ul>
+        </div>
     </div>
 </div>
-
-
 </div>
 
 <?php get_footer(); ?>

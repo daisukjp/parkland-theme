@@ -9,9 +9,7 @@ footer svg{
 .site-footer{
     background-color: $matcha-green;
     border-top: 1px solid black;
-
 }
-
 
 .fa{
     color: white;
@@ -34,7 +32,6 @@ footer p{
 .sitemap ul {
     text-align: center;
     padding: 0rem;
-    
 }
 
 .sitemap ul li {
@@ -64,7 +61,6 @@ footer{
 
     .sitemap{
         order: 1;
-         
         ul {
             padding: 0;
         }
@@ -81,7 +77,6 @@ footer{
         width: 45%
     }
 }
-
 
 .social-media-links ul {
     display: flex;
@@ -122,9 +117,7 @@ footer{
     .site-navigation{
         align-items: end;
     }
-
     .sitemap{
         align-items: flex-start;
     }
-    
 }

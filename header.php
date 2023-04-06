@@ -10,22 +10,19 @@
  */
 
 ?>
+
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="description" content="At Parkland Tai Chi, health is for life. Through Tai Chi, one can increase physical health, circulation, flexibility and balance. Improved mental health, calmness, peace, tranquility and longevity are some of the many benefits of Tai Chi. Parkland Tai Chi is the perfect place to start practicing. We are located in Spruce Grove, Alberta"/>
+	<meta name="keywords" content="longevity, health, flexibility, circulation, mental health, tai chi, parkland, spruce grove, alberta, parkland tai chi, peace, balance, tranquility"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <script>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-  </script>
-
-
 	<?php wp_head(); ?>
-
 
 </head>
 
@@ -122,7 +119,7 @@
           </g>
         </svg>
 
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" id="#nav-icon" >
+        <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" id="#nav-icon" >
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.83 24.32">
   <g>
     <path class="bar"  d="m9.82,3.12c0-.06-.13-.12.08-.15.67-.06,1.2.15,1.87.09.02-.03.03-.07.05-.1.52.04,1.05.1,1.6.14,1.01-.01,2.02-.04,3.02-.07-.03-.04-.04-.07.06-.08.42-.03.99,0,1.59.02.09,0,.18-.01.26-.02.07-.02.09-.06.1-.08.27,0,.51.01.73.02,2.94-.19,5.92-.42,9.15-.64.68-.09,1.37-.18,2.02-.22.98-.04,2.22.03,3.17.04-.15-.35,2.17-.52,1.71-.86.63,0,1.59.02,1.63-.08.15-.29.64-.63,2.32-.81.66-.04,1.67.08,1.9.02.37-.09-.85-.21-.49-.3-4.9-.11-9.61.02-14.54.02-1.68.15-13,.22-15.9.15-.09,0-.18,0-.26,0-1.59-.02-3.51,0-4.85.14-.62.08-1.24.18-1.86.28.29.06.56.11.79.17-.63,0-1.27-.02-1.51.05-1.35.15-.59.32-.07.56.37.1-.13.26.45.37-.42,0-.63,0-1.06-.01-.05.1,1.3-.05,1.01.11-.41-.04-.86.02-1.28.02.15.13,1.46.05,1.4.18-.23.03-1.19-.18-1.27-.02-.02.03.41.04.62.04-1.3.05-2.02.21-.83.38-.41,0-1-.07-1.43-.05,0,0,0,0,0,0,.22,0,.59.04.79.04-.25,0-.49,0-.74,0,.04.02.08.05.13.07.18.02.37.04.56.04-.16,0-.33,0-.49,0,.12.05.26.1.42.15.59.11,1.15.26,1.46.26,2.56.08,5.13.13,7.68.14Z" style="fill:#202020;"/>

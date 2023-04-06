@@ -16,14 +16,6 @@ $title_tag = (isset($settings['archive_title_tag']) and trim($settings['archive_
  */
 get_header('mec'); ?>
 
-    <div class="weather-app">
-        <a class="weatherwidget-io" href="https://forecast7.com/en/53d54n113d90/spruce-grove/" data-label_1="SPRUCE GROVE" data-label_2="Weather" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >SPRUCE GROVE Weather</a>
-        <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-        </script>
-    </div>
-
-
 <div class="class-information">
     <div class="classes-header" >
         <h1>Classes</h1>
@@ -36,16 +28,20 @@ get_header('mec'); ?>
     
         <div class="class-types-flex-container">
             <div class="beginner">
-                <p>This is the beginner column.</p>
+                <h4>Beginner</h4>
+                <p>Learn the fundamentals of Tai Chi. We teach the sequence of the 108 moves in the Tai Chi set. The Tai Chi mindset is almost as important as the motions, its one of the core building blocks in having success, you will learn that here.</p>
             </div>
             <div class="intermediate">
-                <p>This is the intermediate column.</p>
+                <h4>Intermediate</h4>
+                <p>Solidify your foundational knowledge of Tai Chi with more advanced foot and handwork. Balance and fluidity are priorities as well as building healthy habits to ensure your success. </p>
             </div>
             <div class="advanced">
-                <p>This is the advanced column.</p>
+                <h4>Advanced</h4>
+                <p>Our advanced classes are on Saturdays and taught on an individual basis, and vary from student to student. If you are looking to take your Tai Chi a step further, please contact us for more information.</p>
             </div>
         </div>
         <div class="all-levels">
+            <h4>All Levels</h4>
                 <p>We also offer an all-levels Chi Kung class once a week where various techniques are presented and practiced. Everyone is welcome to join.</p>
         </div>
     </div>

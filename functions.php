@@ -102,6 +102,14 @@ function parkland_theme_setup() {
 }
 add_action( 'after_setup_theme', 'parkland_theme_setup' );
 
+
+// Excerpt text character limit
+add_filter('the_excerpt', 'my_the_excerpt');
+function my_the_excerpt($postContent) {
+    $postContent = mb_strimwidth($postContent, 0, 236, "…","UTF-8");
+    return $postContent;
+}
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -205,8 +213,9 @@ function acf_add_allowed_svg_tag( $tags, $context ) {
 
 add_image_size('blog-single-size', 650, 800, array('left', 'top') );
 
-add_image_size('blog-size', 400, 600, array('left', 'top') );
 
+add_image_size('photo-size', 358, 358, array('left', 'top') );
 
+add_image_size('instructor-size', 580, 380, array('left', 'top') );
 
 ?>
