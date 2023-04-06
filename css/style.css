@@ -835,22 +835,10 @@ table {
     top: 22rem;
     padding: 3rem 2rem;
   }
-  /* Mission Statement Section (small) */
-  /* Tai chi Symbol section (small)*/
-  /* More About Us section (small)*/
-}
-@media (min-width: 600px) and (min-width: 625px) {
-  .hero-banner .wrap-home-page-container .overlay-box {
-    margin: 0 50px;
-  }
-}
-@media (min-width: 600px) {
   .hero-banner .wrap-home-page-container .overlay-box p {
     max-width: 481.41px;
     margin: auto;
   }
-}
-@media (min-width: 600px) {
   .hero-banner .wrap-home-page-container .overlay-box .banner-btn-flex {
     flex-flow: nowrap;
     justify-content: space-between;
@@ -861,8 +849,7 @@ table {
     padding: 1.2rem 0.6rem;
     gap: 23px;
   }
-}
-@media (min-width: 600px) {
+  /* Mission Statement Section (small) */
   .mission-statement-section .wrap-mission-statement {
     margin: 72px 50px;
     max-width: 128rem;
@@ -874,14 +861,12 @@ table {
   .mission-statement-section .mission-statement p {
     line-height: 42.2px;
   }
-}
-@media (min-width: 600px) {
+  /* Tai chi Symbol section (small)*/
   .taichi-symbols-section .wrap-taichi-symbol {
     max-width: 128rem;
     margin: auto;
   }
-}
-@media (min-width: 600px) {
+  /* More About Us section (small)*/
   .more-about-us .wrap-more-about-us {
     max-width: 128rem;
     margin: auto;
