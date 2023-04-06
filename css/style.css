@@ -582,7 +582,7 @@ table {
   height: 50px;
   width: 100%;
   position: absolute;
-  top: 87px;
+  top: 83px;
   z-index: 5;
 }
 @media (min-width: 600px) {
@@ -590,7 +590,7 @@ table {
     top: 102px;
     background-size: 100% 40px;
     background: url(../images/brush-vector-3.svg) center no-repeat;
-    height: 42px;
+    height: 33px;
     width: 70%;
     position: absolute;
     z-index: 5;
@@ -706,14 +706,26 @@ table {
 .taichi-symbols-section .taichi-vector {
   align-items: center;
   text-align: center;
+  position: relative;
 }
 .taichi-symbols-section .taichi-vector img {
   margin: auto;
+  z-index: 10;
+  position: relative;
 }
 .taichi-symbols-section .taichi-vector p {
   font-weight: 200;
   max-width: 360px;
   margin: 72px auto;
+}
+.taichi-symbols-section .taichi-vector .vector-3 {
+  background: url("../images/brush-vector-4.svg") no-repeat;
+  background-size: 112% 50px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 120px;
+  z-index: 5;
 }
 
 /* More About Us section */
@@ -880,6 +892,19 @@ table {
   .taichi-symbols-section .wrap-taichi-symbol {
     flex-flow: nowrap;
     justify-content: space-between;
+    position: relative;
+  }
+  .taichi-symbols-section .taichi-vector .vector-3 {
+    display: none;
+  }
+  .taichi-symbols-section .vector-4 {
+    background: url("../images/brush-vector-2.svg") no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 196px;
+    z-index: 5;
   }
   /* More About Us section (Med)*/
   .more-about-us .wrap-more-about-us {
