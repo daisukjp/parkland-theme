@@ -44,7 +44,7 @@
             <ul class="image-gallery">
                 <?php
                 foreach ($ids as $id) {
-                    $image = wp_get_attachment_image_src( $id, 'photo-size' ); 
+                    $image = wp_get_attachment_image_src( $id, 'large' ); 
                     echo '<li><a href="' . $image[0] . '"><img src="' . $image[0] . '" /></a></li>';
                 }
                 ?>
