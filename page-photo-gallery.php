@@ -19,7 +19,7 @@
 
 
     <div class="photo-gallery-banner">
-            <h2>Photo Gallery</h2>
+        <h2>Photo Gallery<img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke"></h2>
     </div>
 
 
