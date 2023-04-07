@@ -13,8 +13,12 @@ get_header();
 <div class="hero-banner">
     <div div class="wrap-home-page-container">
     <div class="overlay-box">
-        <h2>Welcome to Parkland Tai Chi, where Health is for Life.</h2>
-        <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
+        <div>
+            <h2>Welcome to Parkland Tai Chi, where Health is for Life.</h2>
+            <div class="vector-2">
+            </div>
+        </div>
+            <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
         <div class="banner-btn-flex">
             <a href="#" class="btn-book-class banner-btn">Book A Class</a>
             <a href="#" class="btn-read-more banner-btn">Read More</a>
