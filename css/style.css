@@ -563,15 +563,39 @@ table {
   padding: 2rem;
   margin: 2rem;
   top: 18rem;
+  /* brush for heading 1*/
 }
 .hero-banner .wrap-home-page-container .overlay-box h2 {
   font-size: 28.1px;
   font-weight: 600;
   margin: 18px 0;
+  position: relative;
+  z-index: 10;
 }
 .hero-banner .wrap-home-page-container .overlay-box p {
   text-align: center;
   font-size: 18px;
+}
+.hero-banner .wrap-home-page-container .overlay-box .vector-2 {
+  background: url("../images/brush-vector-3.svg") no-repeat;
+  background-size: 96% 50px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 87px;
+  z-index: 5;
+}
+@media (min-width: 600px) {
+  .hero-banner .wrap-home-page-container .overlay-box .vector-2 {
+    top: 102px;
+    background-size: 100% 40px;
+    background: url(../images/brush-vector-3.svg) center no-repeat;
+    height: 42px;
+    width: 70%;
+    position: absolute;
+    z-index: 5;
+    left: 86px;
+  }
 }
 .hero-banner .wrap-home-page-container .overlay-box .banner-btn-flex {
   display: flex;
@@ -798,12 +822,23 @@ table {
     max-width: 580px;
     top: 22rem;
     padding: 3rem 2rem;
-    margin: 50px;
   }
+  /* Mission Statement Section (small) */
+  /* Tai chi Symbol section (small)*/
+  /* More About Us section (small)*/
+}
+@media (min-width: 600px) and (min-width: 625px) {
+  .hero-banner .wrap-home-page-container .overlay-box {
+    margin: 0 50px;
+  }
+}
+@media (min-width: 600px) {
   .hero-banner .wrap-home-page-container .overlay-box p {
     max-width: 481.41px;
     margin: auto;
   }
+}
+@media (min-width: 600px) {
   .hero-banner .wrap-home-page-container .overlay-box .banner-btn-flex {
     flex-flow: nowrap;
     justify-content: space-between;
@@ -814,7 +849,8 @@ table {
     padding: 1.2rem 0.6rem;
     gap: 23px;
   }
-  /* Mission Statement Section (small) */
+}
+@media (min-width: 600px) {
   .mission-statement-section .wrap-mission-statement {
     margin: 72px 50px;
     max-width: 128rem;
@@ -826,12 +862,14 @@ table {
   .mission-statement-section .mission-statement p {
     line-height: 42.2px;
   }
-  /* Tai chi Symbol section (small)*/
+}
+@media (min-width: 600px) {
   .taichi-symbols-section .wrap-taichi-symbol {
     max-width: 128rem;
     margin: auto;
   }
-  /* More About Us section (small)*/
+}
+@media (min-width: 600px) {
   .more-about-us .wrap-more-about-us {
     max-width: 128rem;
     margin: auto;
@@ -847,7 +885,9 @@ table {
   .more-about-us .wrap-more-about-us {
     flex-flow: nowrap;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
+    margin: 72px auto;
+    max-width: 128rem;
   }
   /* Benefits of Tai Chi section (med) */
   .benefits-of-taichi .wrap-benefits-of-taichi h2 {
