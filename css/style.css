@@ -563,15 +563,39 @@ table {
   padding: 2rem;
   margin: 2rem;
   top: 18rem;
+  /* brush for heading 1*/
 }
 .hero-banner .wrap-home-page-container .overlay-box h2 {
   font-size: 28.1px;
   font-weight: 600;
   margin: 18px 0;
+  position: relative;
+  z-index: 10;
 }
 .hero-banner .wrap-home-page-container .overlay-box p {
   text-align: center;
   font-size: 18px;
+}
+.hero-banner .wrap-home-page-container .overlay-box .vector-2 {
+  background: url("../images/brush-vector-3.svg") no-repeat;
+  background-size: 96% 50px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 87px;
+  z-index: 5;
+}
+@media (min-width: 600px) {
+  .hero-banner .wrap-home-page-container .overlay-box .vector-2 {
+    top: 102px;
+    background-size: 100% 40px;
+    background: url(../images/brush-vector-3.svg) center no-repeat;
+    height: 42px;
+    width: 70%;
+    position: absolute;
+    z-index: 5;
+    left: 86px;
+  }
 }
 .hero-banner .wrap-home-page-container .overlay-box .banner-btn-flex {
   display: flex;
@@ -798,12 +822,23 @@ table {
     max-width: 580px;
     top: 22rem;
     padding: 3rem 2rem;
-    margin: 50px;
   }
+  /* Mission Statement Section (small) */
+  /* Tai chi Symbol section (small)*/
+  /* More About Us section (small)*/
+}
+@media (min-width: 600px) and (min-width: 625px) {
+  .hero-banner .wrap-home-page-container .overlay-box {
+    margin: 0 50px;
+  }
+}
+@media (min-width: 600px) {
   .hero-banner .wrap-home-page-container .overlay-box p {
     max-width: 481.41px;
     margin: auto;
   }
+}
+@media (min-width: 600px) {
   .hero-banner .wrap-home-page-container .overlay-box .banner-btn-flex {
     flex-flow: nowrap;
     justify-content: space-between;
@@ -814,7 +849,8 @@ table {
     padding: 1.2rem 0.6rem;
     gap: 23px;
   }
-  /* Mission Statement Section (small) */
+}
+@media (min-width: 600px) {
   .mission-statement-section .wrap-mission-statement {
     margin: 72px 50px;
     max-width: 128rem;
@@ -826,12 +862,14 @@ table {
   .mission-statement-section .mission-statement p {
     line-height: 42.2px;
   }
-  /* Tai chi Symbol section (small)*/
+}
+@media (min-width: 600px) {
   .taichi-symbols-section .wrap-taichi-symbol {
     max-width: 128rem;
     margin: auto;
   }
-  /* More About Us section (small)*/
+}
+@media (min-width: 600px) {
   .more-about-us .wrap-more-about-us {
     max-width: 128rem;
     margin: auto;
@@ -847,7 +885,9 @@ table {
   .more-about-us .wrap-more-about-us {
     flex-flow: nowrap;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
+    margin: 72px auto;
+    max-width: 128rem;
   }
   /* Benefits of Tai Chi section (med) */
   .benefits-of-taichi .wrap-benefits-of-taichi h2 {
@@ -1055,6 +1095,168 @@ video {
 /*--------------------------------------------------------------
 # Instructors page
 --------------------------------------------------------------*/
+main {
+  /* Small Size View */
+  /* Medium Size View */
+}
+main .instructors-banner {
+  background: url("../images/ptc-instructors-page-banner.webp") center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  height: 18vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  main .instructors-banner {
+    height: 25vh;
+  }
+}
+@media (min-width: 800px) {
+  main .instructors-banner {
+    height: 35vh;
+  }
+}
+@media (min-width: 1100px) {
+  main .instructors-banner {
+    height: 45vh;
+  }
+}
+
+.instructors-banner h2 {
+  position: relative;
+  margin: auto;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1;
+}
+
+.instructors-banner img {
+  position: absolute;
+  top: 1.5rem;
+  width: 100%;
+  max-height: 20px;
+  z-index: -1;
+}
+
+.instructor-container-1,
+.instructor-container-2,
+.instructor-container-3,
+.instructor-container-4 {
+  margin-bottom: 72px;
+}
+
+.instructors-section {
+  padding: 0px 20px 0px 20px;
+}
+
+.instructors-section h2 {
+  display: inline-block;
+  color: #74865E;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .instructors-section h2 {
+    text-align: center;
+  }
+}
+.instructors-section h2 img {
+  position: absolute;
+  top: 0.5rem;
+  left: -1rem;
+  z-index: -1;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .instructors-section h2 img {
+    top: 0.5rem;
+  }
+}
+
+.instructor-image,
+.instructor-information {
+  max-width: 360px;
+  margin: auto;
+}
+
+.instructor-information h3 {
+  color: #74865E;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 36px 0px 36px 0px;
+}
+
+.instructor-information h4 {
+  margin: 36px 0px 36px 0px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1100px) {
+  .instructors-section {
+    max-width: 1180px;
+    margin: auto;
+  }
+  .instructors-section h2 {
+    text-align: left;
+    font-size: 4.395rem;
+  }
+  .instructor-container-1,
+  .instructor-container-2,
+  .instructor-container-3,
+  .instructor-container-4 {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 144px auto;
+    gap: 20px;
+  }
+  .instructor-container-1 .instructor-information,
+  .instructor-container-3 .instructor-information {
+    margin-left: 0px;
+    margin-right: auto;
+  }
+  .instructor-container-1 .instructor-image,
+  .instructor-container-3 .instructor-image {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+  .instructor-container-2 .instructor-information,
+  .instructor-container-4 .instructor-information {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+  .instructor-container-2 .instructor-image,
+  .instructor-container-4 .instructor-image {
+    margin-left: 0px;
+    margin-right: auto;
+  }
+  .instructor-container-2 .instructor-image,
+  .instructor-container-4 .instructor-image {
+    order: 2;
+  }
+  .instructor-information h3,
+  .instructor-information h4 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+  .instructor-information,
+  .instructor-image {
+    max-width: 580px;
+    margin-top: 0;
+  }
+  .instructor-image img {
+    width: 580px;
+    margin: 0px 0px 0px 0px;
+  }
+}
 /*--------------------------------------------------------------
 # Booking/Classes page
 --------------------------------------------------------------*/
@@ -1477,6 +1679,127 @@ button#wpforms-submit-343:hover {
 /*--------------------------------------------------------------
 # Photo gallery page
 --------------------------------------------------------------*/
+main {
+  /* Small Size View */
+  /* Medium Size View */
+}
+main .photo-gallery-banner {
+  background: url("../images/ptc-photo-gallery-banner.webp") center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  height: 18vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  main .photo-gallery-banner {
+    height: 25vh;
+  }
+}
+@media (min-width: 800px) {
+  main .photo-gallery-banner {
+    height: 35vh;
+  }
+}
+@media (min-width: 1100px) {
+  main .photo-gallery-banner {
+    height: 45vh;
+  }
+}
+
+.photo-gallery-banner h2 {
+  position: relative;
+  margin: auto;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1;
+}
+
+.photo-gallery-banner img {
+  position: absolute;
+  top: 1.5rem;
+  width: 100%;
+  max-height: 20px;
+  z-index: -1;
+}
+
+.photo-gallery-section {
+  padding: 0px 20px 0px 20px;
+}
+
+.photo-gallery-section h2 {
+  display: inline-block;
+  color: #74865E;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .photo-gallery-section h2 {
+    text-align: center;
+  }
+}
+.photo-gallery-section h2 img {
+  position: absolute;
+  top: 0.5rem;
+  left: -1rem;
+  z-index: -1;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .photo-gallery-section h2 img {
+    top: 0.5rem;
+  }
+}
+
+.gallery-container {
+  max-width: 128rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  height: auto;
+}
+
+.image-gallery li {
+  flex-basis: 358px;
+}
+
+.image-gallery li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 358px;
+  height: 358px;
+  vertical-align: middle;
+}
+
+.image-gallery::after {
+  content: "";
+  flex-basis: 358px;
+}
+
+@media screen and (min-width: 1100px) {
+  .photo-gallery-section {
+    max-width: 1180px;
+    margin: auto;
+    justify-content: center;
+  }
+  .photo-gallery-section h2 {
+    text-align: left;
+    font-size: 4.395rem;
+  }
+}
 /*--------------------------------------------------------------
 # Search results page
 --------------------------------------------------------------*/

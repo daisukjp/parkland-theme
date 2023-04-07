@@ -130,11 +130,41 @@ table {
                 font-size: 28.1px;
                 font-weight: 600;
                 margin: 18px 0;
+                position: relative;
+                z-index: 10;
             }
 
             p {
                 text-align: center;
                 font-size: 18px
+            }
+
+            /* brush for heading 1*/
+            .vector-2 {
+                background: url("../images/brush-vector-3.svg") no-repeat;
+                background-size: 96% 50px;
+                height: 50px;
+                width: 100%;
+                position: absolute;
+                top: 87px;
+                z-index: 5;
+
+                @include mixins.break(small) { 
+                    top: 102px;      
+                    background-size: 100% 40px;
+                    background: url(../images/brush-vector-3.svg) center no-repeat;
+                    height: 42px;
+                    width: 70%;
+                    position: absolute;
+                    // top: 86px;
+                    z-index: 5;
+                    left: 86px;
+                }
+
+                // @media (min-width: 845px) {
+                //     top: 27px;
+                //     max-width: 834.48px;
+                // }
             }
 
             .banner-btn-flex {
@@ -402,7 +432,11 @@ table {
                 max-width: 580px;
                 top: 22rem;
                 padding: 3rem 2rem;
-                margin: 50px;
+                // margin: 50px;
+
+                @media (min-width: 625px) {
+                    margin: 0 50px;
+                }
     
                 p {
                     max-width: 481.41px;
@@ -472,7 +506,9 @@ table {
         .wrap-more-about-us {
             flex-flow: nowrap;
             justify-content: space-between;
-            gap: 1rem;
+            gap: 2rem;
+            margin: 72px auto;
+            max-width: 128rem;
         }
     }
 
@@ -710,7 +746,186 @@ video{
 /*--------------------------------------------------------------
 # Instructors page
 --------------------------------------------------------------*/
+main {
+    .instructors-banner{
+        background: url("../images/ptc-instructors-page-banner.webp") center no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+        height: 18vh;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    /* Small Size View */
+    @include mixins.break(small) {
+        .instructors-banner {
+            height: 25vh;
+        }
+    }
+
+    /* Medium Size View */
+    @include mixins.break(med) {
+        .instructors-banner {
+            height: 35vh;
+        }
+    }
+
+    @include mixins.break(wide) {
+        .instructors-banner {
+            height: 45vh;
+        }
+    }
+}
+
+.instructors-banner h2 {
+    position: relative;
+    margin: auto;
+    color: $gray-99;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    z-index: 1;
+}
+
+.instructors-banner img {
+    position: absolute;
+    top: 1.5rem;
+    width: 100%;
+    max-height: 20px;
+    z-index: -1;
+}
+
+
+
+.instructor-container-1,
+.instructor-container-2,
+.instructor-container-3,
+.instructor-container-4 {
+    margin-bottom: 72px;
+}
+
+.instructors-section {
+    padding: 0px 20px 0px 20px;
+}
+
+.instructors-section h2 {
+    display: inline-block;
+    color: $matcha-green;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 72px;
+    margin-bottom: 72px;
+    position: relative;
+    @media (max-width: 800px) {
+        text-align: center;
+    }
+img {
+    position: absolute;
+    top: 0.5rem;
+    left: -1rem;
+    z-index: -1;
+    width: 100%;
+    @media (max-width:800px) {
+        top: .5rem;
+    }
+}
+}
+
+
+.instructor-image,
+.instructor-information {
+    max-width: 360px;
+    margin: auto;
+}
+
+.instructor-information h3 {
+    color: $matcha-green;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 36px 0px 36px 0px;
+}
+
+.instructor-information h4 {
+    margin: 36px 0px 36px 0px;
+    font-weight: bold;
+}
+
+
+
+@media screen and (min-width: 1100px) {
+
+    .instructors-section {
+        max-width: 1180px;
+        margin: auto;
+    }
+
+    .instructors-section h2 {
+        text-align: left;
+        font-size: 4.395rem;
+    }
+
+    .instructor-container-1,
+    .instructor-container-2,
+    .instructor-container-3,
+    .instructor-container-4 {
+        display: flex;
+        justify-content: center;
+        margin: 0px auto 144px auto;
+        gap: 20px;
+    }
+
+    .instructor-container-1 .instructor-information,
+    .instructor-container-3 .instructor-information {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .instructor-container-1 .instructor-image,
+    .instructor-container-3 .instructor-image {
+        margin-right: 0px;
+        margin-left: auto;
+    }
+
+    .instructor-container-2 .instructor-information,
+    .instructor-container-4 .instructor-information {
+        margin-right: 0px;
+        margin-left: auto;
+    }
+
+    .instructor-container-2 .instructor-image,
+    .instructor-container-4 .instructor-image {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+
+    .instructor-container-2 .instructor-image,
+    .instructor-container-4 .instructor-image {
+        order: 2;
+    } 
+
+    .instructor-information h3,
+    .instructor-information h4 {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .instructor-information,
+    .instructor-image {
+        max-width: 580px;
+        margin-top: 0;
+    }
+
+    .instructor-image img {
+        width: 580px;
+        margin: 0px 0px 0px 0px;
+    }
+
+
+}
 /*--------------------------------------------------------------
 # Booking/Classes page
 --------------------------------------------------------------*/
@@ -1191,6 +1406,140 @@ button#wpforms-submit-343{
 # Photo gallery page
 --------------------------------------------------------------*/
 
+main {
+    .photo-gallery-banner{
+        background: url("../images/ptc-photo-gallery-banner.webp") center no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+        height: 18vh;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        /* Small Size View */
+        @include mixins.break(small) {
+            .photo-gallery-banner {
+                height: 25vh;
+            }
+        }
+
+        /* Medium Size View */
+        @include mixins.break(med) {
+            
+            .photo-gallery-banner {
+                height: 35vh;
+            }
+
+        }
+
+        @include mixins.break(wide) {
+            .photo-gallery-banner {
+                height: 45vh;
+            }
+        }
+    }
+
+.photo-gallery-banner h2 {
+    position: relative;
+    margin: auto;
+    color: $gray-99;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    z-index: 1;
+}
+
+.photo-gallery-banner img {
+    position: absolute;
+    top: 1.5rem;
+    width: 100%;
+    max-height: 20px;
+    z-index: -1;
+}
+
+.photo-gallery-section {
+    padding: 0px 20px 0px 20px;
+}
+
+.photo-gallery-section h2 {
+    display: inline-block;
+    color: $matcha-green;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 72px;
+    margin-bottom: 72px;
+    position: relative;
+    @media (max-width: 800px) {
+        text-align: center;
+    }
+img {
+    position: absolute;
+    top: 0.5rem;
+    left: -1rem;
+    z-index: -1;
+    width: 100%;
+    @media (max-width:800px) {
+        top: .5rem;
+    }
+}
+}
+
+.gallery-container {
+    max-width: 128rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+//    width: 358px;
+//    height: 358px;
+    //grid-template-columns: 358px 358px 358px;
+    //grid-template-rows: 358px 358px 358px;
+    //grid-auto-rows: 100px;
+    gap: 1.5em;
+//    justify-items: center;
+    justify-content: center;
+//    margin-bottom: 1.5em;
+    height: auto;
+}
+
+
+.image-gallery li {
+    flex-basis: 358px;
+}
+
+.image-gallery li img {
+    object-fit: cover;
+    max-width: 358px;
+//    display: flex;
+//    width: 358px;
+//    height: 358px;
+    height: 358px;
+    vertical-align: middle;
+}
+
+.image-gallery::after {
+    content: "";
+    flex-basis: 358px;
+  }
+
+@media screen and (min-width: 1100px) {
+
+    .photo-gallery-section {
+        max-width: 1180px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .photo-gallery-section h2 {
+        text-align: left;
+        font-size: 4.395rem;
+    }
+}
 /*--------------------------------------------------------------
 # Search results page
 --------------------------------------------------------------*/

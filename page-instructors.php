@@ -15,10 +15,86 @@
 <?php get_header(); ?>
 
 <main>
-    <section>
-        <h1>Instructors</h1>
 
-    </section>
+
+    <div class="instructors-page-container">
+
+        <div class="instructors-banner">
+            <h2>Instructors<img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke"></h2>
+        </div>
+
+    </div>
+
+    <div class="instructors-section">
+
+        <h2>Meet Our Instructors <img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
+
+
+
+        <?php
+            $args = array(
+                'post_type' => 'parkland-instructors',
+                'posts_per_page' => 15,
+                'order' => 'ASC',
+            );
+            $loop = new WP_Query($args);
+            $layout1 = '<div class="instructor-container-1">%s</div>';
+            $layout2 = '<div class="instructor-container-2">%s</div>';
+
+            if ($loop->have_posts()) {
+                $counter = 0;
+
+                while ( $loop->have_posts() ) {
+                    $loop->the_post();
+                    if ($counter % 2 == 0) {
+                        ?>
+                        <div class="instructor-container-1">
+                            <div class="instructor-image">
+                                <?php
+                                $image = get_field('instructor_image');
+                                get_field('instructor_content');
+                                ?>
+
+                                <?php if( !empty( $image ) ): ?>
+                                <img src="<?php echo esc_url($image['sizes']['instructor-size']); ?>" width="580" height="380" alt="<?php echo esc_attr($image['alt']); ?>">
+                            </div>
+                                <?php endif ?>
+                            <div class="instructor-information">        
+                                <h3><?php the_title(); ?></h3>
+                                <h4>Instructor Information</h4>
+                                <?php the_field('instructor_content'); ?>
+                            </div>
+                        </div>
+                        <?php
+                    } else {
+                        ?>
+                        <div class="instructor-container-2">
+                            <div class="instructor-image">
+                                <?php
+                                $image = get_field('instructor_image');
+                                get_field('instructor_content');
+                                ?>
+
+                                <?php if( !empty( $image ) ): ?>
+                                <img src="<?php echo esc_url($image['sizes']['instructor-size']); ?>" width="580" height="380" alt="<?php echo esc_attr($image['alt']); ?>">
+                            </div>
+                                <?php endif ?>
+                            <div class="instructor-information">        
+                                <h3><?php the_title(); ?></h3>
+                                <h4>Instructor Information</h4>
+                                <?php the_field('instructor_content'); ?>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                    $counter++;
+                }
+
+            }
+        ?>
+
+    </div>
+
 </main>
 
 <?php get_footer(); ?>
