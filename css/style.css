@@ -1095,33 +1095,52 @@ video {
 /*--------------------------------------------------------------
 # Instructors page
 --------------------------------------------------------------*/
-.instructors-banner {
+main {
+  /* Small Size View */
+  /* Medium Size View */
+}
+main .instructors-banner {
   background: url("../images/ptc-instructors-page-banner.webp") center no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-  height: 60vh;
+  height: 18vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.instructors-rectangle {
-  position: relative;
-  text-align: center;
-  width: clamp(5rem, 30vw, 27rem);
-  height: 0px;
-  bottom: 30px;
-  border: 10px solid #74865E;
-  margin: auto;
-  z-index: 0;
+@media (min-width: 600px) {
+  main .instructors-banner {
+    height: 25vh;
+  }
+}
+@media (min-width: 800px) {
+  main .instructors-banner {
+    height: 35vh;
+  }
+}
+@media (min-width: 1100px) {
+  main .instructors-banner {
+    height: 45vh;
+  }
 }
 
 .instructors-banner h2 {
   position: relative;
   margin: auto;
-  padding-top: 15rem;
   color: #FCFCFC;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 1;
   z-index: 1;
+}
+
+.instructors-banner img {
+  position: absolute;
+  top: 1.5rem;
+  width: 100%;
+  max-height: 20px;
+  z-index: -1;
 }
 
 .instructor-container-1,
