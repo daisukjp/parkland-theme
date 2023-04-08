@@ -1809,6 +1809,40 @@ main .photo-gallery-banner {
 /*--------------------------------------------------------------
 # 404 page
 --------------------------------------------------------------*/
+.page-content p,
+.page-content .search,
+.widgettitle,
+.page-content ul,
+.page-content h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page-content h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+}
+@media (min-width: 800px) {
+  .page-content h2 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+  }
+}
+@media (min-width: 1100px) {
+  .page-content h2 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+  }
+}
+
+#archives-dropdown--1 {
+  display: block;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
 /*--------------------------------------------------------------
 # END OF PAGES
 --------------------------------------------------------------*/
