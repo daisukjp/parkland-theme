@@ -1403,6 +1403,10 @@ main .instructors-banner {
 /*--------------------------------------------------------------
 # Blog posts page
 --------------------------------------------------------------*/
+.vkfs__labels {
+  font-size: 1.8rem;
+}
+
 main {
   /* Small Size View */
   /* Medium Size View */

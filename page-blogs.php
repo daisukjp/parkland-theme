@@ -21,6 +21,9 @@
         </div>
     </div>
     <section>
+        <?php
+            the_content(); 
+        ?>
             
             <div>
                 <h2><?php the_field('blog_page_heading');?></h2>
