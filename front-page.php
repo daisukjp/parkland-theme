@@ -13,15 +13,11 @@ get_header();
 <div class="hero-banner">
     <div div class="wrap-home-page-container">
     <div class="overlay-box">
-        <div>
-            <h2>Welcome to Parkland Tai Chi, where Health is for Life.</h2>
-            <div class="vector-2">
-            </div>
-        </div>
-            <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
+        <h2>Welcome to Parkland Tai Chi, where Health is for Life.</h2>
+        <p>A non-profit organization that promotes health and longevity through various Tai Chi classes.</p>
         <div class="banner-btn-flex">
-            <a href="#" class="btn-book-class banner-btn">Book A Class</a>
-            <a href="#" class="btn-read-more banner-btn">Read More</a>
+            <a href="https://www.parklandtaichi.com/classes/" target="_blank" class="btn-book-class banner-btn">Book A Class</a>
+            <a href="https://www.parklandtaichi.com/about-us/#about-us" target="_blank"  class="btn-read-more banner-btn">Read More</a>
         </div>
     </div>
     </div>
@@ -45,10 +41,10 @@ get_header();
         <div class="wrap-taichi-symbol">
         <div class="taichi-vector">
             <img src="/wp-content/themes/parkland-theme/images/Vector-icon-3.png" alt="tai chi symbol" style="width:150px;height:170px">
-            <p>We offer Beginner, Intermediate, and Advance Tai Chi classes</p>
+            <p>We offer Beginner, Intermediate, and Advanced Tai Chi classes</p>
         </div>
         <div class="taichi-vector">
-            <img src="/wp-content/themes/parkland-theme/images/Vector-1.png" alt="tai chi symbol" style="width:180px;height:170px">
+            <img src="/wp-content/themes/parkland-theme/images/Vector-1.png" alt="tai chi symbol" style="width:190px;height:180px">
             <p>We have an all-levels Chi Kung class from multiple disciplines and techniques
 
             </p>
@@ -70,22 +66,22 @@ get_header();
     <div class="read-our-blog more-about-images">
         <img src="/wp-content/themes/parkland-theme/images/more-about-us3.webp" alt="tai chi symbol" style="width:380px">
         <p>
-            Looking to gain a deeper understanding about Tai Chi? 
-        <a href="#">Read Our Blog</a>
+            Looking to gain a deeper understanding about Tai Chi?
+        <a href="https://www.parklandtaichi.com/blogs/" target="_blank"  >Read Our Blog</a>
     </div>
     <div class="view-our-gallery more-about-images">
         <img src="/wp-content/themes/parkland-theme/images/more-about-us1.webp" alt="tai chi symbol" style="width:380px">
         <p>
-            Visit our photo gallery to get a look into what Parkland Tai Chi is all about.Viverra vel massa et, finibus aliquam tortor. classes,  finibus aliquam
+            Visit our photo gallery to get a look into what Parkland Tai Chi is all about.
         </p>
-        <a href="#">View Our Gallery</a>
+        <a href="https://www.parklandtaichi.com/photo-gallery/" target="_blank" >View Our Gallery</a>
     </div>
     <div class="read-our-faq more-about-images">
         <img src="/wp-content/themes/parkland-theme/images/more-about-us2.webp" alt="tai chi symbol" style="width:380px">
         <p>
             Have a question? Be sure to check out our FAQ to learn more.
         </p>
-        <a href="#">Read Our FAQ</a>
+        <a href="https://www.parklandtaichi.com/about-us/#faq" target="_blank" >Read Our FAQ</a>
     </div>
     </div>
 </div>

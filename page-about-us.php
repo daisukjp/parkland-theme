@@ -18,20 +18,22 @@
     <h2 class="top-of-page-banner-text" >ABOUT <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke"></h2>
 </div>
 
+
 <div class="ptc-video">
     <video width="1280" height="auto" controls loop autoplay muted>
       <source src="/wp-content/themes/parkland-theme/images/ptc-video.mp4" type="video/mp4">
     </video>
+ 
 </div>
 
-<div class="about-us-section">
-
+<div class="about-us-section"  id="about-us">
+   
     <h1>Brief history of Parkland Tai Chi<img src="/wp-content/themes/parkland-theme/images/brushstroke.png" alt="styled brush stroke"></h1>
 
     <div class="about-us-section-intro">
 
         <div class="about-us-section-image">
-            <image><img src="/wp-content/themes/parkland-theme/images/ptc-about-us-section-image.jpg" alt="photo of tai chi class"></image>
+               <image><img src="/wp-content/themes/parkland-theme/images/ptc-about-us-section-image.jpg" alt="photo of tai chi class"></image>
         </div>
 
         <div class="about-us-section-written-content">
@@ -72,9 +74,9 @@
     </div>
 </div>
 
-<div class="faq-container">
+<div class="faq-container" id="faq" >
     <h1>FAQ</h1>
-    <div class="about-us-faq">
+    <div class="about-us-faq"  >
             <div class="faq-item">
                 <h4>I'm in my mid 60's, is it too late to reap the benefits from Tai Chi?</h4>
                 <p>Not too late at all, many people start at that age.</p>
@@ -108,10 +110,8 @@
                 <p>In our organization, this means that we are volunteers and we pay no salaries. We pay for rent, sundries and occasional expenses. We are 100% volunteer based with our senior instructors having 20 to 40 years of experience.
                 </p>
             </div>
-    
     </div>
 </div>
-
 </div>
 
 <?php get_footer(); ?>

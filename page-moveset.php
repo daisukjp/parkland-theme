@@ -29,7 +29,7 @@
     <h1>108 EARLIER HEAVEN MOVESET </h1>
     <div class="accordion-item accordion-active active">
         <div class="accordion-header">
-            <h4>Earlier Heaven Moveset 1-36</h4>
+            <h4>Earlier Heaven Moveset 1</h4>
         </div>
         <div class="accordion-content">
             <ol>
@@ -50,35 +50,36 @@
                 <li>Step Up, Deflect, Parry, Punch</li>
                 <li>Apparent Close Up</li>
                 <li>Cross Hands</li>
-                <li>Embrace Tiger, Return to Mtn</li>
-                <li>Diagonal Single Whip</li>
-                <li>Fist Under Elbow</li>
-                <li>Step Back, Repulse Monkey R</li>
-                <li>Step Back, Repulse Monkey L</li>
-                <li>Step Back, Repulse Monkey R</li>
-                <li>Slanting Flying</li>
-                <li>Raise Hands, Step Up</li>
-                <li>Stork Spreads Wings</li>
-                <li>Brush Knee Left</li>
-                <li>Needle at Sea Bottom</li>
-                <li>Fan Through Back</li>
-                <li>Turn, Chop with Fist</li>
-                <li>Set Up, Deflect, Parry, Punch</li>
-                <li>Step Up, Grasp Bird’s Tail</li>
-                <li>Single Whip</li>
-                <li>Cloud Hands (X5)</li>
-                <li>Single Whip</li>
-                <li>High Pat On Horse</li>
+
             </ol>
         </div>
     </div>
     
       <div class="accordion-item">
         <div class="accordion-header">
-            <h4>Earlier Heaven Moveset 37-72</h4>
+            <h4>Earlier Heaven Moveset 2</h4>
         </div>
         <div class="accordion-content">
-          <ol start="37">
+          <ol start="18">
+            <li>Embrace Tiger, Return to Mtn</li>
+            <li>Diagonal Single Whip</li>
+            <li>Fist Under Elbow</li>
+            <li>Step Back, Repulse Monkey R</li>
+            <li>Step Back, Repulse Monkey L</li>
+            <li>Step Back, Repulse Monkey R</li>
+            <li>Slanting Flying</li>
+            <li>Raise Hands, Step Up</li>
+            <li>Stork Spreads Wings</li>
+            <li>Brush Knee Left</li>
+            <li>Needle at Sea Bottom</li>
+            <li>Fan Through Back</li>
+            <li>Turn, Chop with Fist</li>
+            <li>Set Up, Deflect, Parry, Punch</li>
+            <li>Step Up, Grasp Bird’s Tail</li>
+            <li>Single Whip</li>
+            <li>Cloud Hands (X5)</li>
+            <li>Single Whip</li>
+            <li>High Pat On Horse</li>
             <li>Separation of Right Foot</li>
             <li>Separation of Left Foot</li>
             <li>Turn, Kick</li>
@@ -98,6 +99,18 @@
             <li>Step Up, Deflect, Parry, Punch</li>
             <li>Apparent Close Up</li>
             <li>Cross Hands</li>
+
+        </ol>
+        </div>
+      </div>
+    
+    
+      <div class="accordion-item">
+        <div class="accordion-header"><h4>
+            Earlier Heaven Moveset 3
+        </h4></div>
+        <div class="accordion-content">
+        <ol start="56">
             <li>Embrace Tiger, Return to Mtn</li>
             <li>Horizontal Single Whip</li>
             <li>Parting Wild Horse Mane R</li>
@@ -115,17 +128,6 @@
             <li>Left Grasp Bird’s Tail</li>
             <li>Step Up, Grasp Bird’s Tail</li>
             <li>Single Whip</li>
-        </ol>
-        </div>
-      </div>
-    
-    
-      <div class="accordion-item">
-        <div class="accordion-header"><h4>
-            Earlier Heaven Moveset 73-108
-        </h4></div>
-        <div class="accordion-content">
-        <ol start="73">
             <li>Cloud Hands (X7)</li>
             <li>Single Whip</li>
             <li>Snake Creeps Down Low Style</li>
