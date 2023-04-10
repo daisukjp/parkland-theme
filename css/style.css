@@ -1441,7 +1441,8 @@ main .instructors-banner {
 
 .filter-item-box {
   max-width: 1180px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
