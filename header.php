@@ -22,8 +22,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<?php wp_head(); ?>
 
 </head>
@@ -39,7 +38,7 @@
 			<div class="weather-and-button-flex">
 
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 388.77 261.94">  
-            <a xmlns="http://www.w3.org/2000/svg" id="anchor" xlink:href="http://parklandtaichi.web.dmitcapstone.ca/parkland-taichi/" xmlns:xlink="http://www.w3.org/1999/xlink" target="_top">
+            <a xmlns="http://www.w3.org/2000/svg" id="anchor" xlink:href="https://www.parklandtaichi.com/" xmlns:xlink="http://www.w3.org/1999/xlink" target="_top">
             <defs>
               <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
                 <feOffset dx="1" dy="1"/>

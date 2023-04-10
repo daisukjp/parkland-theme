@@ -16,17 +16,19 @@
 
 <main>
 
+    <div class="photo-gallery-container">
 
+        <div class="photo-gallery-banner">
+            <h2>Photo Gallery</h2>
 
-    <div class="photo-gallery-banner">
-        <h2>Photo Gallery<img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke"></h2>
+            <div class="photo-gallery-rectangle">
+            </div>
+        </div>
+
     </div>
-
-
 
     <div class="photo-gallery-section">
         <h2>Photos of Parkland<img src="/wp-content/themes/parkland-theme/images/brushstroke.svg" alt="styled brush stroke"></h2>
-
     </div>
 
     <section>
@@ -42,7 +44,7 @@
             <ul class="image-gallery">
                 <?php
                 foreach ($ids as $id) {
-                    $image = wp_get_attachment_image_src( $id, 'large' ); 
+                    $image = wp_get_attachment_image_src( $id, 'photo-size' ); 
                     echo '<li><a href="' . $image[0] . '"><img src="' . $image[0] . '" /></a></li>';
                 }
                 ?>

@@ -53,15 +53,25 @@ a{
     color: black;
 }
 
-.about-us-section{
-    h1{
+.about-us-section {
+    h1 {
+        color: $matcha-green;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 18px;
+        text-align: left;
+        width: 35ch;
+    }
+}
+
+.registration-heading h1 {
+    text-align: center;
     color: $matcha-green;
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 18px;
-    text-align: left;
-    width: 35ch;
-    }
+    width: 15ch;
+
 }
 
 .taichi-quote-container p {
