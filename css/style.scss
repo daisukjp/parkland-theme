@@ -770,35 +770,57 @@ video{
 /*--------------------------------------------------------------
 # Instructors page
 --------------------------------------------------------------*/
-.instructors-banner{
-    background: url("../images/ptc-instructors-page-banner.webp") center no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-    height: 60vh;
-    width: 100%; 
-}
+main {
+    .instructors-banner{
+        background: url("../images/ptc-instructors-page-banner.webp") center no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+        height: 18vh;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.instructors-rectangle {
-    position: relative;
-    text-align: center;
-    width: clamp(5rem, 30vw, 27rem);
-    height: 0px;
-    bottom: 30px;
-    border: 10px solid $matcha-green;
-    margin: auto;
-    z-index: 0;
-}
+    /* Small Size View */
+    @include mixins.break(small) {
+        .instructors-banner {
+            height: 25vh;
+        }
+    }
 
+    /* Medium Size View */
+    @include mixins.break(med) {
+        .instructors-banner {
+            height: 35vh;
+        }
+    }
+
+    @include mixins.break(wide) {
+        .instructors-banner {
+            height: 45vh;
+        }
+    }
+}
 
 .instructors-banner h2 {
     position: relative;
     margin: auto;
-    padding-top: 15rem;
     color: $gray-99;
     text-transform: uppercase;
     font-weight: bold;
+    line-height: 1;
     z-index: 1;
 }
+
+.instructors-banner img {
+    position: absolute;
+    top: 1.5rem;
+    width: 100%;
+    max-height: 20px;
+    z-index: -1;
+}
+
 
 
 .instructor-container-1,
@@ -1407,34 +1429,58 @@ button#wpforms-submit-343{
 /*--------------------------------------------------------------
 # Photo gallery page
 --------------------------------------------------------------*/
-.photo-gallery-banner{
-    background: url("../images/ptc-photo-gallery-banner.webp") center no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-    height: 60vh;
-    width: 100%; 
-}
 
-.photo-gallery-rectangle {
-    position: relative;
-    text-align: center;
-    width: clamp(5rem, 30vw, 27rem);
-    height: 0px;
-    bottom: 30px;
-    border: 10px solid $matcha-green;
-    margin: auto;
-    z-index: 0;
-}
+main {
+    .photo-gallery-banner{
+        background: url("../images/ptc-photo-gallery-banner.webp") center no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+        height: 18vh;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
 
+        /* Small Size View */
+        @include mixins.break(small) {
+            .photo-gallery-banner {
+                height: 25vh;
+            }
+        }
+
+        /* Medium Size View */
+        @include mixins.break(med) {
+            
+            .photo-gallery-banner {
+                height: 35vh;
+            }
+
+        }
+
+        @include mixins.break(wide) {
+            .photo-gallery-banner {
+                height: 45vh;
+            }
+        }
+    }
 
 .photo-gallery-banner h2 {
     position: relative;
     margin: auto;
-    padding-top: 15rem;
     color: $gray-99;
     text-transform: uppercase;
     font-weight: bold;
+    line-height: 1;
     z-index: 1;
+}
+
+.photo-gallery-banner img {
+    position: absolute;
+    top: 1.5rem;
+    width: 100%;
+    max-height: 20px;
+    z-index: -1;
 }
 
 .photo-gallery-section {
@@ -1465,7 +1511,9 @@ img {
 }
 
 .gallery-container {
+    max-width: 128rem;
     height: auto;
+    margin: 0 auto;
 }
 
 .image-gallery {
@@ -1527,7 +1575,44 @@ img {
 /*--------------------------------------------------------------
 # 404 page
 --------------------------------------------------------------*/
+.page-content p,
+.page-content .search,
+.widgettitle,
+.page-content ul,
+.page-content h2
+ {
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
+.page-content { 
+    h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    }
+
+    @include mixins.break(med) {
+        h2 {
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+        }
+    }
+    @include mixins.break(wide) {
+        h2 {
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+        }
+    }
+
+}
+
+#archives-dropdown--1 {
+    display: block;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 72px;
+}
 /*--------------------------------------------------------------
 # END OF PAGES
 --------------------------------------------------------------*/
