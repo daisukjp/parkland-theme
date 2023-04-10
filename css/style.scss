@@ -471,6 +471,11 @@ table {
         .wrap-mission-statement {
             margin: 72px 50px;
             max-width: 128rem;
+
+            @media (min-width: 1400px) {
+                /* Mission Statement  (1280px)*/
+                        margin: 72px auto;
+            }
         }
     
         h1 {
@@ -584,13 +589,6 @@ table {
             top: 22rem;
             padding: 3rem 2rem;
             margin: 0;
-        }
-    }
-
-    /* Mission Statement  (exwide)*/
-    .mission-statement-section {
-        .wrap-mission-statement {
-            margin: 72px auto;
         }
     }
 }
