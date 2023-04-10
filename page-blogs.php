@@ -13,10 +13,14 @@
 ?>
 
 <?php get_header(); ?>
-<main>s
+<main>
     <div class="blog-post-banner">
         <div class="blog-post-wrap">
-            <h2>BLOG</h2>
+        <h2 class="blog-list-header-title">
+            Blog
+            <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke">
+        </h2>
+            
         </div>
     </div>
     <div class="filter-section">
@@ -24,10 +28,14 @@
             the_content(); 
         ?>
     </div>
-    <section>
+    <section class="blog-list-loop">
             
-            <div>
-                <h2><?php the_field('blog_page_heading');?></h2>
+            <div class="blog-post-top-box">
+                <div class="blog-post-top-box-item">
+                    <h2><?php the_field('blog_page_heading');?></h2>
+                    <div class="vector-1">
+                    </div>
+                </div>
             </div>
             
                 <?php
