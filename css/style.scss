@@ -1399,17 +1399,51 @@ button#wpforms-submit-343{
             color: $gray-99;
             text-transform: uppercase;
             font-weight: 500;
+            position: relative;
+            margin: auto;
+            line-height: 1;
+            z-index: 1;
+        }
+        .single-blog-post-wrap img {
+            position: absolute;
+            top: 0.8rem;
+            width: 100%;
+            max-height: 20px;
+            z-index: -1;
+
+            @include mixins.break(med) {
+                top: 1.5rem;
+            }
         }
     }
 
     article {
         padding: 72px 20px 0 20px;
         .individual-blog-heading {
+            position: relative;
             .entry-title {
                 font-size: 28.13px;
                 color: $matcha-green;
                 text-transform: uppercase;
                 margin-bottom: 72px;
+            }
+            .vector-1 {
+                background: url("../images/brush-vector-1.svg") no-repeat;
+                background-size: 100% 37px;
+                height: 50px;
+                width: 100%;
+                position: absolute;
+                top: 8px;
+                z-index: -1;
+        
+                @include mixins.break(med) { 
+                    top: 45px;      
+                    background-size: 100% 40px;
+                }
+        
+                @media (min-width: 845px) {
+                    max-width: 834.48px;
+                }
             }
         }
 

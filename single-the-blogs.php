@@ -12,19 +12,30 @@ get_header();
 <div class="single-blog-post-container">
 <div class="single-blog-post-banner">
     <div class="single-blog-post-wrap">
-        <h2>SINGLE BLOG</h2>
+        <h2>
+            SINGLE BLOG
+            <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke">
+        </h2>
+        
     </div>
 </div>
 <?php if(have_posts()) : ?>
     <?php while(have_posts()) : the_post(); ?>
         <article <?php post_class();?> id="post-<?php the_ID();?>" >
 
-        <div class="individual-blog-heading" ><?php the_title('<h1 class="entry-title">', '</h1>'); ?></div>
+        <div class="individual-blog-heading" >
+            <div class="single-blog-post-top-box-item">
+
+                <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
+                <div class="vector-1">
+                    </div>
+            </div>
+        </div>
 
         <div class="individual-blog-flex-container">
 
             <div>
-                    <?php the_field('blog_content'); ?>
+                <?php the_field('blog_content'); ?>
             </div>
 
         </div>
