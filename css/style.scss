@@ -146,17 +146,16 @@ table {
                 height: 50px;
                 width: 100%;
                 position: absolute;
-                top: 87px;
+                top: 83px;
                 z-index: 5;
 
                 @include mixins.break(small) { 
                     top: 102px;      
                     background-size: 100% 40px;
                     background: url(../images/brush-vector-3.svg) center no-repeat;
-                    height: 42px;
+                    height: 33px;
                     width: 70%;
                     position: absolute;
-                    // top: 86px;
                     z-index: 5;
                     left: 86px;
                 }
@@ -292,15 +291,28 @@ table {
     .taichi-vector {
         align-items: center;
         text-align: center;
+        position: relative;
 
         img {
             margin: auto;
+            z-index: 10;
+            position: relative;
         }
 
         p {
             font-weight: 200;
             max-width: 360px;
             margin: 72px auto;
+        }
+
+        .vector-3 {
+            background: url("../images/brush-vector-4.svg") no-repeat;
+                background-size: 112% 50px;
+                height: 50px;
+                width: 100%;
+                position: absolute;
+                top: 120px;
+                z-index: 5;
         }
     }
 }
@@ -432,11 +444,6 @@ table {
                 max-width: 580px;
                 top: 25rem;
                 padding: 3rem 2rem;
-                // margin: 50px;
-
-                @media (min-width: 625px) {
-                    margin: 0 50px;
-                }
     
                 p {
                     max-width: 481.41px;
@@ -464,6 +471,11 @@ table {
         .wrap-mission-statement {
             margin: 72px 50px;
             max-width: 128rem;
+
+            @media (min-width: 1400px) {
+                /* Mission Statement  (1280px)*/
+                        margin: 72px auto;
+            }
         }
     
         h1 {
@@ -498,6 +510,23 @@ table {
         .wrap-taichi-symbol {
             flex-flow: nowrap;
             justify-content: space-between;
+            position: relative;
+        }
+
+        .taichi-vector {
+            .vector-3 {
+                display: none;
+            }
+        }
+
+        .vector-4 {
+            background: url("../images/brush-vector-2.svg") no-repeat;
+            background-size: cover;
+            height: 50px;
+            width: 100%;
+            position: absolute;
+            top: 196px;
+            z-index: 5;
         }
     }
 
@@ -521,6 +550,8 @@ table {
                 font-size: 43.95px;
                 margin-bottom: 0;
             }
+
+            
         }
     }
 } 
@@ -558,13 +589,6 @@ table {
             top: 22rem;
             padding: 3rem 2rem;
             margin: 0;
-        }
-    }
-
-    /* Mission Statement  (exwide)*/
-    .mission-statement-section {
-        .wrap-mission-statement {
-            margin: 72px auto;
         }
     }
 }
