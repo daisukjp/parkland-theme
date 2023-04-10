@@ -25,7 +25,6 @@ get_header();
 
         <div class="individual-blog-heading" >
             <div class="single-blog-post-top-box-item">
-
                 <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
                 <div class="vector-1">
                     </div>
