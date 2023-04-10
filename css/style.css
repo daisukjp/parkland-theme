@@ -1141,17 +1141,6 @@ video {
   width: 100%;
 }
 
-.instructors-rectangle {
-  position: relative;
-  text-align: center;
-  width: clamp(5rem, 30vw, 27rem);
-  height: 0px;
-  bottom: 30px;
-  border: 10px solid #74865E;
-  margin: auto;
-  z-index: 0;
-}
-
 .instructors-banner h2 {
   position: relative;
   margin: auto;
@@ -1189,7 +1178,7 @@ video {
 }
 .instructors-section h2 img {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: -1rem;
   z-index: -1;
   width: 100%;
@@ -1198,6 +1187,10 @@ video {
   .instructors-section h2 img {
     top: 0.5rem;
   }
+}
+
+.instructor-image {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .instructor-image,
@@ -1296,11 +1289,30 @@ video {
   margin: 2rem 0;
 }
 
-.class-types-flex-container {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  padding: 0 0 2rem 0;
+@media (min-width: 800px) {
+  .class-types-flex-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 4rem;
+    padding: 0 0 2rem 0;
+  }
+}
+@media (max-width: 800px) {
+  .class-types-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 2.5rem;
+  }
+}
+.beginner,
+.intermediate,
+.advanced {
+  flex: 1;
+  border-radius: 6px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .all-levels {
@@ -1585,6 +1597,10 @@ div#wpforms-343 {
   margin: 0 auto;
   display: flex;
   font-family: "Inter";
+}
+
+.page-id-391 .entry-content {
+  margin: 0 2%;
 }
 
 button#wpforms-submit-343 {
