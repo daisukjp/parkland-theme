@@ -111,7 +111,7 @@ table {
     background: url("../images/ptc-home-page-banner.webp") center no-repeat;
     background-size: cover;
     box-shadow:  rgba(0, 0, 0, 0.3);
-    height: 60vh;
+    height: 60rem;
     width: 100%;
 
     .wrap-home-page-container {
@@ -1172,6 +1172,7 @@ main {
                 position: absolute;
                 top: 10px;
                 z-index: -1;
+                max-width: 380px;
         
                 @include mixins.break(med) { 
                     top: 45px;      
@@ -1184,6 +1185,9 @@ main {
             }
             
             .blog-post-top-box-item {
+                margin: auto;
+                max-width: 380px;
+
                 @media (min-width: 845px) {
                     margin: auto;
                     max-width: 840px;
@@ -1426,6 +1430,7 @@ button#wpforms-submit-343{
                 color: $matcha-green;
                 text-transform: uppercase;
                 margin-bottom: 72px;
+                font-weight: 600;
             }
             .vector-1 {
                 background: url("../images/brush-vector-1.svg") no-repeat;
@@ -1435,14 +1440,26 @@ button#wpforms-submit-343{
                 position: absolute;
                 top: 8px;
                 z-index: -1;
+                max-width: 380px;
         
                 @include mixins.break(med) { 
                     top: 45px;      
                     background-size: 100% 40px;
+                    max-width: 100%;
                 }
         
                 @media (min-width: 845px) {
                     max-width: 834.48px;
+                }
+            }
+
+            .single-blog-post-top-box-item {
+                margin: auto;
+                max-width: 380px;
+
+                @media (min-width: 845px) {
+                    margin: auto;
+                    max-width: 840px;
                 }
             }
         }

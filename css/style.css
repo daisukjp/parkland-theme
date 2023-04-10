@@ -549,7 +549,7 @@ table {
   background: url("../images/ptc-home-page-banner.webp") center no-repeat;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.3);
-  height: 60vh;
+  height: 60rem;
   width: 100%;
 }
 .hero-banner .wrap-home-page-container {
@@ -1497,6 +1497,7 @@ main section .blog-post-top-box .vector-1 {
   position: absolute;
   top: 10px;
   z-index: -1;
+  max-width: 380px;
 }
 @media (min-width: 800px) {
   main section .blog-post-top-box .vector-1 {
@@ -1508,6 +1509,10 @@ main section .blog-post-top-box .vector-1 {
   main section .blog-post-top-box .vector-1 {
     max-width: 834.48px;
   }
+}
+main section .blog-post-top-box .blog-post-top-box-item {
+  margin: auto;
+  max-width: 380px;
 }
 @media (min-width: 845px) {
   main section .blog-post-top-box .blog-post-top-box-item {
@@ -1725,6 +1730,7 @@ button#wpforms-submit-343:hover {
   color: #74865E;
   text-transform: uppercase;
   margin-bottom: 72px;
+  font-weight: 600;
 }
 .single-blog-post-container article .individual-blog-heading .vector-1 {
   background: url("../images/brush-vector-1.svg") no-repeat;
@@ -1734,16 +1740,28 @@ button#wpforms-submit-343:hover {
   position: absolute;
   top: 8px;
   z-index: -1;
+  max-width: 380px;
 }
 @media (min-width: 800px) {
   .single-blog-post-container article .individual-blog-heading .vector-1 {
     top: 45px;
     background-size: 100% 40px;
+    max-width: 100%;
   }
 }
 @media (min-width: 845px) {
   .single-blog-post-container article .individual-blog-heading .vector-1 {
     max-width: 834.48px;
+  }
+}
+.single-blog-post-container article .individual-blog-heading .single-blog-post-top-box-item {
+  margin: auto;
+  max-width: 380px;
+}
+@media (min-width: 845px) {
+  .single-blog-post-container article .individual-blog-heading .single-blog-post-top-box-item {
+    margin: auto;
+    max-width: 840px;
   }
 }
 .single-blog-post-container article .individual-blog-flex-container p {
