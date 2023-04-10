@@ -13,17 +13,29 @@
 ?>
 
 <?php get_header(); ?>
-
 <main>
     <div class="blog-post-banner">
         <div class="blog-post-wrap">
-            <h2>BLOG</h2>
+        <h2 class="blog-list-header-title">
+            Blog
+            <img src="/wp-content/themes/parkland-theme/images/banner-underline.png" alt="styled brush stroke">
+        </h2>
+            
         </div>
     </div>
-    <section>
+    <div class="filter-section">
+        <?php
+            the_content(); 
+        ?>
+    </div>
+    <section class="blog-list-loop">
             
-            <div>
-                <h2><?php the_field('blog_page_heading');?></h2>
+            <div class="blog-post-top-box">
+                <div class="blog-post-top-box-item">
+                    <h2><?php the_field('blog_page_heading');?></h2>
+                    <div class="vector-1">
+                    </div>
+                </div>
             </div>
             
                 <?php
@@ -39,5 +51,14 @@
                     }?>
     </section>
 </main>
+
+<script>
+    const filterButton = document.querySelector('.filter-button');
+
+    filterButton.addEventListener('click', function() {
+    const group = document.querySelector('.filtered-items');
+    group.classList.toggle('show-filtered-items');
+    });
+</script>
 
 <?php get_footer(); ?>
