@@ -148,16 +148,11 @@
 							'menu_id'        => 'primary-menu',
 						));
 					?>
-					<div class="search">
+					<div class="search-input-form">
             <?php get_search_form(); ?>
           </div>
 				</div>
 			</nav><!-- #site-navigation -->
-
-			<!-- <div class="widget-area">
-				 dynamic_sidebar( 'sidebar-1' ); 
-			</div> -->
-
 		</div>
 
 	</header><!-- #masthead -->
