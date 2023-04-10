@@ -46,16 +46,21 @@ get_header();
         <div class="taichi-vector">
             <img src="/wp-content/themes/parkland-theme/images/Vector-1.png" alt="tai chi symbol" style="width:190px;height:180px">
             <p>We have an all-levels Chi Kung class from multiple disciplines and techniques
-
             </p>
         </div>
         <div class="taichi-vector">
             <img src="/wp-content/themes/parkland-theme/images/Vector-2.png" alt="tai chi symbol" style="width:210px;height:170px">
-            <p>We give Advance individual teaching at our Saturday open practice session
-
+            <div class="vector-3">
+            </div>
+            <p>
+                We give Advance individual teaching at our Saturday open practice session
             </p>
         </div>
+
+        <div class="vector-4">
         </div>
+        </div>
+
     </div>
     
 </div>

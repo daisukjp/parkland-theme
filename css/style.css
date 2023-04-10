@@ -558,7 +558,7 @@ table {
   background: url("../images/ptc-home-page-banner.webp") center no-repeat;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.3);
-  height: 60vh;
+  height: 60rem;
   width: 100%;
 }
 .hero-banner .wrap-home-page-container {
@@ -591,7 +591,7 @@ table {
   height: 50px;
   width: 100%;
   position: absolute;
-  top: 87px;
+  top: 83px;
   z-index: 5;
 }
 @media (min-width: 600px) {
@@ -599,7 +599,7 @@ table {
     top: 102px;
     background-size: 100% 40px;
     background: url(../images/brush-vector-3.svg) center no-repeat;
-    height: 42px;
+    height: 33px;
     width: 70%;
     position: absolute;
     z-index: 5;
@@ -715,14 +715,26 @@ table {
 .taichi-symbols-section .taichi-vector {
   align-items: center;
   text-align: center;
+  position: relative;
 }
 .taichi-symbols-section .taichi-vector img {
   margin: auto;
+  z-index: 10;
+  position: relative;
 }
 .taichi-symbols-section .taichi-vector p {
   font-weight: 200;
   max-width: 360px;
   margin: 72px auto;
+}
+.taichi-symbols-section .taichi-vector .vector-3 {
+  background: url("../images/brush-vector-4.svg") no-repeat;
+  background-size: 112% 50px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 120px;
+  z-index: 5;
 }
 
 /* More About Us section */
@@ -829,25 +841,13 @@ table {
   /* Banner - Section (small)*/
   .hero-banner .wrap-home-page-container .overlay-box {
     max-width: 580px;
-    top: 22rem;
+    top: 25rem;
     padding: 3rem 2rem;
   }
-  /* Mission Statement Section (small) */
-  /* Tai chi Symbol section (small)*/
-  /* More About Us section (small)*/
-}
-@media (min-width: 600px) and (min-width: 625px) {
-  .hero-banner .wrap-home-page-container .overlay-box {
-    margin: 0 50px;
-  }
-}
-@media (min-width: 600px) {
   .hero-banner .wrap-home-page-container .overlay-box p {
     max-width: 481.41px;
     margin: auto;
   }
-}
-@media (min-width: 600px) {
   .hero-banner .wrap-home-page-container .overlay-box .banner-btn-flex {
     flex-flow: nowrap;
     justify-content: space-between;
@@ -858,16 +858,27 @@ table {
     padding: 1.2rem 0.6rem;
     gap: 23px;
   }
-}
-@media (min-width: 600px) {
+  /* Mission Statement Section (small) */
   .mission-statement-section .wrap-mission-statement {
     margin: 72px 50px;
     max-width: 128rem;
   }
+  /* Tai chi Symbol section (small)*/
+  /* More About Us section (small)*/
+}
+@media (min-width: 600px) and (min-width: 1400px) {
+  .mission-statement-section .wrap-mission-statement {
+    /* Mission Statement  (1280px)*/
+    margin: 72px auto;
+  }
+}
+@media (min-width: 600px) {
   .mission-statement-section h1 {
     font-size: 64px;
     text-align: left;
   }
+}
+@media (min-width: 600px) {
   .mission-statement-section .mission-statement p {
     line-height: 42.2px;
   }
@@ -889,6 +900,19 @@ table {
   .taichi-symbols-section .wrap-taichi-symbol {
     flex-flow: nowrap;
     justify-content: space-between;
+    position: relative;
+  }
+  .taichi-symbols-section .taichi-vector .vector-3 {
+    display: none;
+  }
+  .taichi-symbols-section .vector-4 {
+    background: url("../images/brush-vector-2.svg") no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 196px;
+    z-index: 5;
   }
   /* More About Us section (Med)*/
   .more-about-us .wrap-more-about-us {
@@ -926,10 +950,6 @@ table {
     top: 22rem;
     padding: 3rem 2rem;
     margin: 0;
-  }
-  /* Mission Statement  (exwide)*/
-  .mission-statement-section .wrap-mission-statement {
-    margin: 72px auto;
   }
 }
 /*--------------------------------------------------------------
@@ -1433,6 +1453,48 @@ video {
 /*--------------------------------------------------------------
 # Blog posts page
 --------------------------------------------------------------*/
+.vkfs__labels {
+  font-size: 1.8rem;
+}
+
+.show-filtered-items {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.filtered-items {
+  display: none;
+  visibility: hidden;
+}
+
+.filter-section {
+  margin: 36px 0 0 0;
+  padding: 1rem 20px;
+  background-color: #D5D5C0;
+}
+
+.filter-title-desktop {
+  display: none;
+}
+
+.filter-input .wp-block-search__input {
+  border-radius: 20px;
+}
+
+.filter-small-flex button {
+  background-color: #D9D3DD;
+  width: 80px !important;
+  margin-right: 5px !important;
+  border: 0.5px solid black;
+  letter-spacing: 0 !important;
+}
+
+.filter-item-box {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main {
   /* Small Size View */
   /* Medium Size View */
@@ -1453,6 +1515,17 @@ main .blog-post-banner h2 {
   color: #FCFCFC;
   text-transform: uppercase;
   font-weight: 500;
+  position: relative;
+  margin: auto;
+  line-height: 1;
+  z-index: 1;
+}
+main .blog-post-banner .blog-list-header-title img {
+  position: absolute;
+  top: 1.5rem;
+  width: 100%;
+  max-height: 20px;
+  z-index: -1;
 }
 main section {
   padding: 72px 20px 0 20px;
@@ -1462,6 +1535,40 @@ main section h2 {
   color: #74865E;
   text-transform: uppercase;
   margin-bottom: 72px;
+}
+main section .blog-post-top-box {
+  position: relative;
+}
+main section .blog-post-top-box .vector-1 {
+  background: url("../images/brush-vector-1.svg") no-repeat;
+  background-size: 100% 37px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+  max-width: 380px;
+}
+@media (min-width: 800px) {
+  main section .blog-post-top-box .vector-1 {
+    top: 45px;
+    background-size: 100% 40px;
+  }
+}
+@media (min-width: 845px) {
+  main section .blog-post-top-box .vector-1 {
+    max-width: 834.48px;
+  }
+}
+main section .blog-post-top-box .blog-post-top-box-item {
+  margin: auto;
+  max-width: 380px;
+}
+@media (min-width: 845px) {
+  main section .blog-post-top-box .blog-post-top-box-item {
+    margin: auto;
+    max-width: 840px;
+  }
 }
 main .blog-flex-item {
   display: grid;
@@ -1509,6 +1616,17 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
 @media (min-width: 600px) {
   main .blog-post-banner {
     height: 25vh;
+  }
+  main .wp-container-5.wp-container-5 {
+    justify-content: space-evenly;
+  }
+  main .filter-title-desktop {
+    display: block;
+  }
+  main .filter-section {
+    margin: 36px 0 0 0;
+    padding: 1rem 50px;
+    background-color: #D5D5C0;
   }
 }
 @media (min-width: 800px) {
@@ -1639,15 +1757,67 @@ button#wpforms-submit-343:hover {
   color: #FCFCFC;
   text-transform: uppercase;
   font-weight: 500;
+  position: relative;
+  margin: auto;
+  line-height: 1;
+  z-index: 1;
+}
+.single-blog-post-container .single-blog-post-banner .single-blog-post-wrap img {
+  position: absolute;
+  top: 0.8rem;
+  width: 100%;
+  max-height: 20px;
+  z-index: -1;
+}
+@media (min-width: 800px) {
+  .single-blog-post-container .single-blog-post-banner .single-blog-post-wrap img {
+    top: 1.5rem;
+  }
 }
 .single-blog-post-container article {
   padding: 72px 20px 0 20px;
+}
+.single-blog-post-container article .individual-blog-heading {
+  position: relative;
 }
 .single-blog-post-container article .individual-blog-heading .entry-title {
   font-size: 28.13px;
   color: #74865E;
   text-transform: uppercase;
   margin-bottom: 72px;
+  font-weight: 600;
+}
+.single-blog-post-container article .individual-blog-heading .vector-1 {
+  background: url("../images/brush-vector-1.svg") no-repeat;
+  background-size: 100% 37px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 8px;
+  z-index: -1;
+  max-width: 380px;
+}
+@media (min-width: 800px) {
+  .single-blog-post-container article .individual-blog-heading .vector-1 {
+    top: 45px;
+    background-size: 100% 40px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 845px) {
+  .single-blog-post-container article .individual-blog-heading .vector-1 {
+    max-width: 834.48px;
+  }
+}
+.single-blog-post-container article .individual-blog-heading .single-blog-post-top-box-item {
+  margin: auto;
+  max-width: 380px;
+}
+@media (min-width: 845px) {
+  .single-blog-post-container article .individual-blog-heading .single-blog-post-top-box-item {
+    margin: auto;
+    max-width: 840px;
+  }
 }
 .single-blog-post-container article .individual-blog-flex-container p {
   margin-bottom: 36px;
