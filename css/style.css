@@ -1407,6 +1407,43 @@ main .instructors-banner {
   font-size: 1.8rem;
 }
 
+.show-filtered-items {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.filtered-items {
+  display: none;
+  visibility: hidden;
+}
+
+.filter-section {
+  margin: 36px 0 0 0;
+  padding: 1rem 20px;
+  background-color: #D5D5C0;
+}
+
+.filter-title-desktop {
+  display: none;
+}
+
+.filter-input .wp-block-search__input {
+  border-radius: 20px;
+}
+
+.filter-small-flex button {
+  background-color: #D9D3DD;
+  width: 80px !important;
+  margin-right: 5px !important;
+  border: 0.5px solid black;
+  letter-spacing: 0 !important;
+}
+
+.filter-item-box {
+  max-width: 1180px;
+  margin: auto;
+}
+
 main {
   /* Small Size View */
   /* Medium Size View */
@@ -1483,6 +1520,17 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
 @media (min-width: 600px) {
   main .blog-post-banner {
     height: 25vh;
+  }
+  main .wp-container-5.wp-container-5 {
+    justify-content: space-evenly;
+  }
+  main .filter-title-desktop {
+    display: block;
+  }
+  main .filter-section {
+    margin: 36px 0 0 0;
+    padding: 1rem 50px;
+    background-color: #D5D5C0;
   }
 }
 @media (min-width: 800px) {
