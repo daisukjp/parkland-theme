@@ -41,10 +41,14 @@ get_header();
         <div class="wrap-taichi-symbol">
         <div class="taichi-vector">
             <img src="/wp-content/themes/parkland-theme/images/Vector-icon-3.png" alt="tai chi symbol" style="width:150px;height:170px">
+            <div class="vector-3">
+            </div>
             <p>We offer Beginner, Intermediate, and Advanced Tai Chi classes</p>
         </div>
         <div class="taichi-vector">
             <img src="/wp-content/themes/parkland-theme/images/Vector-1.png" alt="tai chi symbol" style="width:190px;height:180px">
+            <div class="vector-3">
+            </div>
             <p>We have an all-levels Chi Kung class from multiple disciplines and techniques
             </p>
         </div>
