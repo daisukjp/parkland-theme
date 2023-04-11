@@ -146,6 +146,15 @@ a {
   width: 35ch;
 }
 
+.registration-heading h1 {
+  text-align: center;
+  color: #74865E;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 18px;
+  width: 15ch;
+}
+
 .taichi-quote-container p {
   font-family: "Josefin Sans";
   font-weight: 300;
@@ -160,6 +169,18 @@ a {
   margin-bottom: 2rem;
 }
 
+.sub-menu {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  background-color: #74865E;
+}
+
+@media (min-width: 800px) {
+  .sub-menu li {
+    border-bottom: 1px solid black;
+  }
+}
 header svg {
   height: 6rem;
 }
@@ -192,7 +213,6 @@ header svg {
     top: 17.6rem;
   }
   .main-navigation.toggled ul#primary-menu {
-    padding-bottom: 8rem;
     border-bottom: 1px solid black;
   }
   .search-input-form {
@@ -241,15 +261,6 @@ header svg {
   display: flex;
   align-items: center;
   gap: 3rem;
-}
-
-.weather-widget {
-  max-width: 320px;
-  min-width: 320px;
-}
-
-.current-weather {
-  display: flex;
 }
 
 .menu-toggle svg {
@@ -303,8 +314,7 @@ ol[class] {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -411,8 +421,7 @@ footer {
   display: flex;
   gap: 3rem;
   align-items: center;
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 
 .site-navigation {
@@ -974,9 +983,15 @@ table {
   line-height: 1;
 }
 
-.about-us-container {
+.about-us-container,
+.registration-heading {
   max-width: 128rem;
   margin: 0 auto;
+}
+
+.registration-heading {
+  display: flex;
+  justify-content: center;
 }
 
 .about-us-section-intro {
@@ -1009,13 +1024,36 @@ table {
 }
 .about-us-section h1 img {
   position: absolute;
-  top: 0.5rem;
+  height: 4rem;
+  top: 1rem;
   left: -1rem;
   z-index: -1;
   width: 100%;
 }
 @media (max-width: 800px) {
   .about-us-section h1 img {
+    top: 0.5rem;
+  }
+}
+
+.registration-heading h1 {
+  position: relative;
+}
+@media (max-width: 800px) {
+  .registration-heading h1 {
+    text-align: center;
+  }
+}
+.registration-heading h1 img {
+  position: absolute;
+  height: 3rem;
+  top: 1rem;
+  left: 1rem;
+  z-index: -1;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .registration-heading h1 img {
     top: 0.5rem;
   }
 }
@@ -1115,52 +1153,22 @@ video {
 /*--------------------------------------------------------------
 # Instructors page
 --------------------------------------------------------------*/
-main {
-  /* Small Size View */
-  /* Medium Size View */
-}
-main .instructors-banner {
+.instructors-banner {
   background: url("../images/ptc-instructors-page-banner.webp") center no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-  height: 18vh;
+  height: 60vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 600px) {
-  main .instructors-banner {
-    height: 25vh;
-  }
-}
-@media (min-width: 800px) {
-  main .instructors-banner {
-    height: 35vh;
-  }
-}
-@media (min-width: 1100px) {
-  main .instructors-banner {
-    height: 45vh;
-  }
 }
 
 .instructors-banner h2 {
   position: relative;
   margin: auto;
+  padding-top: 15rem;
   color: #FCFCFC;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 1;
   z-index: 1;
-}
-
-.instructors-banner img {
-  position: absolute;
-  top: 1.5rem;
-  width: 100%;
-  max-height: 20px;
-  z-index: -1;
 }
 
 .instructor-container-1,
@@ -1190,7 +1198,7 @@ main .instructors-banner {
 }
 .instructors-section h2 img {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: -1rem;
   z-index: -1;
   width: 100%;
@@ -1199,6 +1207,10 @@ main .instructors-banner {
   .instructors-section h2 img {
     top: 0.5rem;
   }
+}
+
+.instructor-image {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .instructor-image,
@@ -1297,11 +1309,30 @@ main .instructors-banner {
   margin: 2rem 0;
 }
 
-.class-types-flex-container {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  padding: 0 0 2rem 0;
+@media (min-width: 800px) {
+  .class-types-flex-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 4rem;
+    padding: 0 0 2rem 0;
+  }
+}
+@media (max-width: 800px) {
+  .class-types-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 2.5rem;
+  }
+}
+.beginner,
+.intermediate,
+.advanced {
+  flex: 1;
+  border-radius: 6px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .all-levels {
@@ -1331,7 +1362,7 @@ main .instructors-banner {
 # Class details page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# 404 page
+# Moveset Page
 --------------------------------------------------------------*/
 .taichi-quote-container {
   background: #74865E;
@@ -1413,8 +1444,7 @@ main .instructors-banner {
 
 @media (min-width: 800px) {
   .active .accordion-content ol {
-    -moz-columns: 3;
-         columns: 3;
+    columns: 3;
     margin: 0 auto;
     text-align: left;
     padding-left: 14rem;
@@ -1623,8 +1653,7 @@ main .blog-post-btn:active, main .blog-post-btn:focus {
   }
   main .blog-post-content img {
     height: 443px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1100px) {
@@ -1674,7 +1703,9 @@ div.wpforms-container-full .wpforms-form .wpforms-checkbox-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-multiplechoice-3-columns ul,
 div.wpforms-container-full .wpforms-form .wpforms-list-3-columns ul {
   display: -ms-flex;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -1684,6 +1715,10 @@ div#wpforms-343 {
   margin: 0 auto;
   display: flex;
   font-family: "Inter";
+}
+
+.page-id-391 .entry-content {
+  margin: 0 2%;
 }
 
 button#wpforms-submit-343 {
@@ -1849,52 +1884,33 @@ button#wpforms-submit-343:hover {
 /*--------------------------------------------------------------
 # Photo gallery page
 --------------------------------------------------------------*/
-main {
-  /* Small Size View */
-  /* Medium Size View */
-}
-main .photo-gallery-banner {
+.photo-gallery-banner {
   background: url("../images/ptc-photo-gallery-banner.webp") center no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-  height: 18vh;
+  height: 60vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-@media (min-width: 600px) {
-  main .photo-gallery-banner {
-    height: 25vh;
-  }
-}
-@media (min-width: 800px) {
-  main .photo-gallery-banner {
-    height: 35vh;
-  }
-}
-@media (min-width: 1100px) {
-  main .photo-gallery-banner {
-    height: 45vh;
-  }
+
+.photo-gallery-rectangle {
+  position: relative;
+  text-align: center;
+  width: clamp(5rem, 30vw, 27rem);
+  height: 0px;
+  bottom: 30px;
+  border: 10px solid #74865E;
+  margin: auto;
+  z-index: 0;
 }
 
 .photo-gallery-banner h2 {
   position: relative;
   margin: auto;
+  padding-top: 15rem;
   color: #FCFCFC;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 1;
   z-index: 1;
-}
-
-.photo-gallery-banner img {
-  position: absolute;
-  top: 1.5rem;
-  width: 100%;
-  max-height: 20px;
-  z-index: -1;
 }
 
 .photo-gallery-section {
@@ -1929,9 +1945,7 @@ main .photo-gallery-banner {
 }
 
 .gallery-container {
-  max-width: 128rem;
   height: auto;
-  margin: 0 auto;
 }
 
 .image-gallery {
@@ -1947,8 +1961,7 @@ main .photo-gallery-banner {
 }
 
 .image-gallery li img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-width: 358px;
   height: 358px;
   vertical-align: middle;
@@ -2044,6 +2057,9 @@ main .photo-gallery-banner {
   margin: 0;
   padding-left: 0;
 }
+.main-navigation ul :hover {
+  color: #D9D3DD;
+}
 
 .main-navigation ul ul {
   float: left;
@@ -2054,7 +2070,19 @@ main .photo-gallery-banner {
   left: -999em;
   z-index: 99999;
 }
+.main-navigation ul ul :hover {
+  color: #D9D3DD;
+}
 
+@media (min-width: 800px) {
+  .main-navigation ul ul {
+    padding-top: 1rem;
+  }
+  .main-navigation ul ul li {
+    padding: 0rem 1rem 1rem 1rem;
+    padding-top: 1rem;
+  }
+}
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
@@ -2283,8 +2311,7 @@ main .photo-gallery-banner {
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -2299,8 +2326,7 @@ main .photo-gallery-banner {
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   color: #21759b;
   display: block;
   font-size: 0.875rem;
@@ -2313,4 +2339,6 @@ main .photo-gallery-banner {
   top: 5px;
   width: auto;
   z-index: 100000;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
