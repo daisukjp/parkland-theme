@@ -215,7 +215,7 @@ header svg {
   .main-navigation.toggled ul#primary-menu {
     border-bottom: 1px solid black;
   }
-  .search {
+  .search-input-form {
     display: none;
   }
   .weather-and-button-flex {
@@ -1986,6 +1986,22 @@ button#wpforms-submit-343:hover {
 /*--------------------------------------------------------------
 # Search results page
 --------------------------------------------------------------*/
+.search-page-main {
+  padding: 72px 20px;
+  max-width: 128rem;
+  margin: auto;
+}
+
+.search-page-container,
+.widget-area {
+  max-width: 780px;
+  margin: auto;
+}
+
+.widget-area {
+  padding: 2rem;
+}
+
 /*--------------------------------------------------------------
 # Archive page
 --------------------------------------------------------------*/

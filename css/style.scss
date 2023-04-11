@@ -1727,6 +1727,21 @@ img {
 /*--------------------------------------------------------------
 # Search results page
 --------------------------------------------------------------*/
+.search-page-main {
+    padding: 72px 20px;
+    max-width: 128rem;
+    margin: auto;
+}
+
+.search-page-container,
+.widget-area {
+    max-width: 780px;
+    margin: auto;
+}
+
+.widget-area {
+    padding: 2rem;
+}
 
 /*--------------------------------------------------------------
 # Archive page
