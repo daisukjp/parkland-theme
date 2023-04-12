@@ -596,8 +596,11 @@ table {
 /*--------------------------------------------------------------
 # About-us page
 --------------------------------------------------------------*/
+.about-us-top-banner {
+    background-color: #b8b8b8;
+}
 .about-us-banner-image {
-    background: url("../images/ptc-about-us-banner.jpg") center center no-repeat;
+    background: url("../images/parkland-member-image.webp") center no-repeat;
     background-size: 100% auto;
     box-shadow: rgba(0, 0, 0, 0.3);
     height: 40vh;
@@ -605,6 +608,12 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 1100px) {
+        background: url("../images/parkland-member-image.webp") top center no-repeat;
+        background-size: 100% auto;
+        height: 60rem;
+    }
 
     h2 {
         color: white;
