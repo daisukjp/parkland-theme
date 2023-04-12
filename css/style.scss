@@ -608,6 +608,17 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
 
     @media (min-width: 1100px) {
         background: url("../images/parkland-member-image.webp") top center no-repeat;
